@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 1vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+    display: flex;
+    background-color: #000;
+    gap: 25px;
+}
+
+.logo {
+  height: 70px;
+  border-radius: 50%;
+
+}
