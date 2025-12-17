@@ -1,6 +1,10 @@
+/*
+Styles for the root React element
+#root is the div where your entire React app is mounted
+*/
 #root {
-  max-width: none;
-  margin: 0 auto;
+  max-width: none;  /* no max, takes full width of screen*/
+  margin: 0 auto; /* center horizontally */
   padding: 0;
   text-align: center;
 }
@@ -8,16 +12,21 @@
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
+  will-change: filter; /* Optimize for filter changes */
   transition: filter 300ms;
 }
 .logo:hover {
+    /* Add a glowing effect on hover */
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/*
+Keyframes define an animation
+This one spins an element in a full circle
+*/
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +42,15 @@
   }
 }
 
+/*
+Card container styles
+*/
 .card {
   padding: 2em;
 }
-
+/*
+Text style for documentation links
+*/
 .read-the-docs {
   color: #888;
 }

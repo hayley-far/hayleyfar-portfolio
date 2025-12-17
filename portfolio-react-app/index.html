@@ -5,3 +5,16 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+<!--
+NOTES:
+
+1. React does NOT render directly into the body
+- It renders into the div with id="root"
+
+2. main.jsx connects React to this HTML file
+- createRoot(...).render(<App />)
+
+3. You usually do NOT put content directly inside index.html
+- React controls everything inside #root
+-->

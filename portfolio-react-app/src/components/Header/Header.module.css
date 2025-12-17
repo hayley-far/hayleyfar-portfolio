@@ -1,22 +1,32 @@
+/*
+Styles for the header section
+*/
 header {
-  position: fixed;
-  box-sizing: border-box;
+  position: fixed; /* Fix the header at the top of the viewport */
+  box-sizing: border-box; /* Makes padding and borders included in width */
+  /* Position the header at the very top-left of the page */
   top: 0;
   left: 0;
   width: 100%;
   background-color: #000;
   padding: 1vh 5vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Space items evenly across the header */
+  align-items: center; /* Vertically center items */
 }
 
+/*
+Navigation bar styles
+*/
 nav {
-    display: flex;
+    display: flex; /* display links in a row */
     background-color: #000;
-    gap: 25px;
+    gap: 25px; /* space between links */
 }
 
+/*
+Logo image styles
+*/
 .logo {
   height: 70px;
   border-radius: 50%;
