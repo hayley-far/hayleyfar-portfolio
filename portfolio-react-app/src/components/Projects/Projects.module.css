@@ -5,11 +5,11 @@
   padding: 10px;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory; /* optional snapping */
-  margin-left: 2vw;
+  margin-left: 5vw;
 }
 
 .projectsTitle{
     font-size: 2.5em;
     text-align: left;
-    margin-left: 2.5vw;
+    margin-left: 10vw;
 }

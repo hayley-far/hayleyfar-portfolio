@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className={styles.projectsSection}>
       {/* Title above carousel */}
-      <h2 className={styles.projectsTitle}>projects</h2>
+      <h2 className={styles.projectsTitle}>Projects</h2>
 
       {/* Carousel container */}
       <div className={styles.carouselContainer}>
