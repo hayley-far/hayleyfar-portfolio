@@ -11,7 +11,7 @@ function Card({ title, description, variant = 'default' }) {
   return (
     <div className={`${styles.card} ${styles[variant]}`}> {/* base class styles and dynamic */}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <div>{description}</div>
     </div>
   );
 }

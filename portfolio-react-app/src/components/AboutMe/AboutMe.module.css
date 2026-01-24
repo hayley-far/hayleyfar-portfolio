@@ -4,7 +4,8 @@ Styles for the main About Me section container
 .aboutMe {
     /* Background image for the section */
     /* The path is relative to THIS CSS file */
-  background-image: url('../../assets/background.jpeg');
+  /*background-image: url('../../assets/background.jpeg');*/
+  background-color: white;
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   width: 100vw;
   height: 80vh;

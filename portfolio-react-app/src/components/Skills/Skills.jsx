@@ -13,23 +13,23 @@ function Skills() {
   return (
       <div className={styles.gridContainer}>
           <Card
-            title="Skill 1"
-            description="Experienced in building semantic and accessible web pages using HTML5."
+            title="Languages"
+            description={<p>Java <br /> C/C++ <br /> JavaScript <br /> HTML/CSS <br /> Python</p>}
             variant="skillsCard"
           />
           <Card
-            title="Skill 2"
-            description="Skilled in styling web pages with CSS3, including Flexbox and Grid layouts."
+            title="Frameworks"
+            description={<p>React <br /> JUnit</p>}
             variant="skillsCard"
           />
           <Card
-            title="Skill 3"
-            description="Proficient in JavaScript ES6+, including DOM manipulation and event handling."
+            title="Developer Tools"
+            description={<p>GitHub <br /> GitLab <br /> IntelliJ <br /> Visual Studio Code <br /> Vite</p>}
             variant="skillsCard"
           />
           <Card
-            title="Skill 4"
-            description="Experienced in building dynamic user interfaces using React.js and component-based architecture."
+            title="Softwares"
+            description={<p>Figma <br /></p>}
             variant="skillsCard"
           />
       </div>

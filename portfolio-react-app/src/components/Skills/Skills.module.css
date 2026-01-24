@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 15vh 5vw;
+    padding: 5vh 5vw;
+    background-color: #ABD1D9;
 }
 
