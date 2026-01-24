@@ -1,0 +1,44 @@
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ABD1D9;
+  padding: 40px;
+}
+
+
+.contactInfo {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 100px;
+}
+.left h2{
+    margin: 0px;
+    margin-bottom: 200px;
+}
+
+.img{
+    width: 25%;
+    height: 25%;
+    margin-right: 200px;
+    border-radius: 50%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
