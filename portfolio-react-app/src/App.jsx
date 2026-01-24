@@ -6,6 +6,7 @@ import './App.css'
 // import components
 import Header from './components/Header/Header.jsx'
 import AboutMe from './components/AboutMe/AboutMe.jsx'
+import Skills from './components/Skills/Skills.jsx'
 
 // react functional component
 function App() {
@@ -17,6 +18,7 @@ function App() {
     {/* main section of the page */}
     <main>
        <AboutMe />
+       <Skills />
     </main>
     </>
   )
