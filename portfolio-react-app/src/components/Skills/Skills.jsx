@@ -19,17 +19,17 @@ function Skills() {
           />
           <Card
             title="Frameworks"
-            description={<p>React <br /> JUnit</p>}
+            description={<p>Java Swing <br />React <br /> JUnit</p>}
             variant="skillsCard"
           />
           <Card
-            title="Developer Tools"
-            description={<p>GitHub <br /> GitLab <br /> IntelliJ <br /> Visual Studio Code <br /> Vite</p>}
+            title="Developer Tools & Software"
+            description={<p>GitHub/GitLab <br /> IntelliJ <br />  Vite <br /> Figma</p>}
             variant="skillsCard"
           />
           <Card
-            title="Softwares"
-            description={<p>Figma <br /></p>}
+            title="Other Skills"
+            description={<p>AWS <br /> Docker & VMs <br /> Bash/Linux Terminal Commands</p>}
             variant="skillsCard"
           />
       </div>

@@ -7,6 +7,7 @@ import './App.css'
 import Header from './components/Header/Header.jsx'
 import AboutMe from './components/AboutMe/AboutMe.jsx'
 import Skills from './components/Skills/Skills.jsx'
+import Projects from './components/Projects/Projects.jsx'
 
 // react functional component
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <main>
        <AboutMe />
        <Skills />
+       <Projects />
     </main>
     </>
   )
