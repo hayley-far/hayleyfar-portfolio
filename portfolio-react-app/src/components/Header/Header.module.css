@@ -8,11 +8,27 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000;
+  background-color: #A3B593;
   padding: 1vh 5vw;
   display: flex;
   justify-content: space-between; /* Space items evenly across the header */
   align-items: center; /* Vertically center items */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover state */
+a:hover {
+  color: #53633F; /* change to any color you want */
+}
+
+.navText {
+    color: #53633F;
 }
 
 /*
@@ -20,7 +36,7 @@ Navigation bar styles
 */
 nav {
     display: flex; /* display links in a row */
-    background-color: #000;
+    background-color: #A3B593;
     gap: 25px; /* space between links */
 }
 
