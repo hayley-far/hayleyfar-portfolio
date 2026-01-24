@@ -54,3 +54,8 @@ Text style for documentation links
 .read-the-docs {
   color: #888;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

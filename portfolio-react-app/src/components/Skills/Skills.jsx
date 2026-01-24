@@ -11,7 +11,7 @@ import Card from '../Cards/Cards.jsx';
 
 function Skills() {
   return (
-      <div className={styles.gridContainer}>
+      <section id="skills" className={styles.gridContainer}>
           <Card
             title="Languages"
             description={<p>Java <br /> C/C++ <br /> JavaScript <br /> HTML/CSS <br /> Python</p>}
@@ -32,7 +32,7 @@ function Skills() {
             description={<p>AWS <br /> Docker & VMs <br /> Bash/Linux Terminal Commands</p>}
             variant="skillsCard"
           />
-      </div>
+      </section>
   );
 }
 export default Skills
