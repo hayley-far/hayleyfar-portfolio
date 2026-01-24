@@ -6,16 +6,18 @@ import logo from '../../assets/logo.jpeg';
 // CSS Modules keep styles scoped to this component only
 import styles from './Header.module.css';
 
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
       // Semantic HTML element for page header
     <header>
         {/* Navigation bar */}
         <nav>
-            {/* Anchor links for page sections */}
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
         </nav>
+
         {/* Logo image */}
         <img src={logo} alt="Logo" className={styles.logo}/>
         {/* Site title */}

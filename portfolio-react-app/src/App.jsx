@@ -1,29 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header.jsx';
+import HomePage from './HomePage.jsx';
+import ProjectsPage from './ProjectsPage.jsx';
 
-// import components
-import Header from './components/Header/Header.jsx'
-import AboutMe from './components/AboutMe/AboutMe.jsx'
-import Skills from './components/Skills/Skills.jsx'
-import Projects from './components/Projects/Projects.jsx'
-
-// react functional component
 function App() {
-    //return statement to define what is rendered on screen
-    //<> </> is a react fragment that allows multiple elements to be returned without adding extra nodes to the DOM
   return (
-      <>
-    <Header />
-    {/* main section of the page */}
-    <main>
-       <AboutMe />
-       <Skills />
-       <Projects />
-    </main>
-    </>
-  )
+    <BrowserRouter>
+      <Header /> {/* stays on all pages */}
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          {/* Add more pages here */}
+        </Routes>
+      </main>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
