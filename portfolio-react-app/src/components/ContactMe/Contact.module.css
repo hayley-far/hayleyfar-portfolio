@@ -21,7 +21,7 @@
 }
 .left h2{
     margin: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 20px; /* Space between heading and contact info. may change */
 }
 
 .img{
