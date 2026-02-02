@@ -14,12 +14,12 @@ function Projects() {
 
       {/* Carousel container */}
       <div className={styles.carouselContainer}>
-        <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
-        <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
-        <Card title="Recapp" description={<p>VUW Hackathon 2025</p>} variant="projectCard" />
-        <Card title="Fash and Chaps" description={<p>SWEN225 Chips Challenge Game</p>} variant="projectCard" />
-        <Card title="Bomberman Game" description={<p>Personal Game Project</p>} variant="projectCard" />
         <Card title="Portfolio Website" description={<p>This website :)</p>} variant="projectCard" />
+        <Card title="Bomberman Game" description={<p>Personal Game Project</p>} variant="projectCard" />
+        <Card title="Fash and Chaps" description={<p>SWEN225 Chips Challenge Game</p>} variant="projectCard" />
+        <Card title="Recapp" description={<p>VUW Hackathon 2025</p>} variant="projectCard" />
+        <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
+        <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
       </div>
     </div>
   );

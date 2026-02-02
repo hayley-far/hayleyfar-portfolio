@@ -7,13 +7,19 @@ import logo from '../../assets/logo.jpeg';
 import './Cards.module.css';
 import styles from './Cards.module.css';
 
-function Card({ title, description, variant = 'default' }) {
+function Card({ title, description, variant, color, isActive, onClick }) {
   return (
-    <div className={`${styles.card} ${styles[variant]}`}> {/* base class styles and dynamic */}
+    <div
+      className={`${styles.card} ${styles[variant]} ${color ? styles[color] : ""} ${isActive ? styles.active : ""}`}
+      onClick={onClick}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+    >
       <h3>{title}</h3>
-      <div>{description}</div>
+      {description}
     </div>
   );
 }
+
 
 export default Card
