@@ -10,12 +10,12 @@ import Card from '../Cards/Cards.jsx';
 // Components are reusable pieces of UI
 function ProjectSection() {
     const projects = [
-            {title: "Portfolio Website", description: <p>My personal portfolio built with React.</p>,},
-            {title: "Bomberman Game", description: <p>A classic Bomberman clone.</p>,},
-            {title: "Fash and Chaps", description: <p>Chips Challenge.</p>,},
-            {title: "Recapp", description: <p>Hackathon App.</p>,},
-            {title: "Galaga Game", description: <p>Retro arcade shooter.</p>,},
-            {title: "Autonomous Vehicle Challenge", description: <p>Self-driving competition project.</p>,},
+            {title: "Portfolio Website", description: <p>My personal portfolio built with React.</p>, color: "pink",},
+            {title: "Bomberman Game", description: <p>A classic Bomberman clone.</p>, color: "pink",},
+            {title: "Fash and Chaps", description: <p>Chips Challenge.</p>,color: "blue",},
+            {title: "Recapp", description: <p>Hackathon App.</p>,color: "blue",},
+            {title: "Galaga Game", description: <p>Retro arcade shooter.</p>,color: "blue",},
+            {title: "Autonomous Vehicle Challenge", description: <p>Self-driving competition project.</p>,color: "blue",},
           ];
     const [activeProject, setActiveProject] = useState(projects[0]);
 
@@ -28,6 +28,8 @@ function ProjectSection() {
                   key={project.title}
                   title={project.title}
                   variant="projectPageCard"
+                  color={project.color}
+                  isActive={activeProject.title === project.title}
                   onClick={() => setActiveProject(project)}
                 />
               ))}
@@ -39,6 +41,7 @@ function ProjectSection() {
                 title={activeProject.title}
                 description={activeProject.description}
                 variant="mainContentCard"
+                color={activeProject.color}
               />
             </div>
           </section>
