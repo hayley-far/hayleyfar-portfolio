@@ -9,7 +9,6 @@ import AboutMe from './components/AboutMe/AboutMe.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import Projects from './components/Projects/Projects.jsx'
 import Contact from './components/ContactMe/Contact.jsx'
-import Footer from './components/Footer/Footer.jsx'
 
 // react functional component
 function HomePage() {
@@ -21,7 +20,6 @@ function HomePage() {
        <Skills />
        <Projects />
        <Contact />
-       <Footer />
     </>
   );
 }

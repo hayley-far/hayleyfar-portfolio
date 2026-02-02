@@ -1,12 +1,20 @@
-import React from 'react';
-import Projects from './components/Projects/Projects.jsx';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
+// import components
+import ProjectSection from './components/ProjectsPage/ProjectsSection.jsx'
+
+// react functional component
 function ProjectsPage() {
+    //return statement to define what is rendered on screen
+    //<> </> is a react fragment that allows multiple elements to be returned without adding extra nodes to the DOM
   return (
-    <div>
-      <h1>All Projects</h1>
-    </div>
+      <>
+       <ProjectSection />
+    </>
   );
 }
 
-export default ProjectsPage;
+export default ProjectsPage

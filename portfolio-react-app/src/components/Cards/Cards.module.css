@@ -21,3 +21,17 @@
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.projectPageCard{
+    background-color: #A3B593;
+    flex: 0 0 29%; /* 3 cards + peek */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    scroll-snap-align: start;
+    height: 100px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

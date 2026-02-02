@@ -1,0 +1,28 @@
+.projectsSection {
+  position: relative;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  height: 70vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  height : 100%;
+  overflow-y: auto;
+  gap: 40px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; /* optional snapping */
+  margin-left: 5vw;
+}
+
+.mainContent{}

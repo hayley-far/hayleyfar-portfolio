@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import HomePage from './HomePage.jsx';
 import ProjectsPage from './ProjectsPage.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           {/* Add more pages here */}
         </Routes>
       </main>
+      <Footer /> {/* stays on all pages */}
+
     </BrowserRouter>
   );
 }
