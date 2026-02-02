@@ -24,7 +24,7 @@
 
 .projectPageCard{
     background-color: #A3B593;
-    flex: 0 0 29%; /* 3 cards + peek */
+    flex: 0 0 20%; /* 3 cards + peek */
     text-align: center;
     display: flex;
     align-items: center;
@@ -34,4 +34,20 @@
     height: 100px;
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.projectPageCard:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.mainContentCard{
+    background-color: #ABD1D9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 50vh;
+    width: 60vw;
+    overflow-y: auto;
 }

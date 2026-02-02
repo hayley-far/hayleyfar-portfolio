@@ -1,28 +1,38 @@
+/* File: portfolio-react-app/src/components/ProjectsPage/ProjectsSection.module.css */
 .projectsSection {
   position: relative;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  align-items: flex-start;
+  grid-template-columns: 2fr 5fr; /* use a space, not a comma */
   gap: 50px;
+  align-items: start;
   height: 70vh;
-  width: 100vw;
+  width: 100vw; /* use percent to avoid viewport overflow */
   box-sizing: border-box;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
+/* left column: carousel */
 .carouselContainer {
   display: flex;
   flex-direction: column;
-  height : 100%;
+  height: 100%;
   overflow-y: auto;
   gap: 40px;
   padding: 10px;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; /* optional snapping */
-  margin-left: 5vw;
+  scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+  /* optional: ensure it sits in the first column */
+  grid-column: 1 / 2;
+  margin-top: 13px;
 }
 
-.mainContent{}
+/* right column: main content */
+.mainContent {
+  box-sizing: border-box;
+  grid-column: 2 / 3;
+  padding: 10px;
+  overflow: hidden; /* or auto if it needs scrolling */
+}
