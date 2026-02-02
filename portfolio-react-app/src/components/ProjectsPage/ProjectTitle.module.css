@@ -1,0 +1,23 @@
+.projectTitle{
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+.keyCode {
+  display: flex;
+  gap: 20px; /* spacing between circle+text pairs */
+  padding-left: 1200px;
+}
+
+.codeItem {
+  display: flex;
+  align-items: center; /* vertical center circle & text */
+  gap: 6px; /* spacing between circle and its text */
+}
+
+.codeSymbol {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+

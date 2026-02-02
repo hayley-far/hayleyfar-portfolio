@@ -2,6 +2,7 @@
 .projectsSection {
   position: relative;
   padding: 50px;
+  padding-top: 0px;
   display: grid;
   grid-template-columns: 2fr 5fr; /* use a space, not a comma */
   gap: 50px;
@@ -9,7 +10,7 @@
   height: 70vh;
   width: 100vw; /* use percent to avoid viewport overflow */
   box-sizing: border-box;
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -34,5 +35,6 @@
   box-sizing: border-box;
   grid-column: 2 / 3;
   padding: 10px;
+  padding-top: 40px;
   overflow: hidden; /* or auto if it needs scrolling */
 }
