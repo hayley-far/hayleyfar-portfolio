@@ -18,7 +18,7 @@ Styles for the main About Me section container
   10vw = horizontal padding (left & right)
   */
   padding: 30vh 10vw;
-  text-align: left;
+  text-align: right;
   line-height: 0.5;
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 // Import the CSS Module file
 // CSS Modules scope styles locally to this component
 import styles from './Projects.module.css';
@@ -14,12 +15,24 @@ function Projects() {
 
       {/* Carousel container */}
       <div className={styles.carouselContainer}>
-        <Card title="Portfolio Website" description={<p>This website :)</p>} variant="projectCard" />
-        <Card title="Bomberman Game" description={<p>Personal Game Project</p>} variant="projectCard" />
-        <Card title="Fash and Chaps" description={<p>SWEN225 Chips Challenge Game</p>} variant="projectCard" />
-        <Card title="Recapp" description={<p>VUW Hackathon 2025</p>} variant="projectCard" />
-        <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
-        <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
+        <Link to="/projects#portfolio">
+            <Card title="Portfolio Website" description={<p>This website :)</p>} variant="projectCard" />
+        </Link>
+        <Link to="/projects#bomberman">
+            <Card title="Bomberman Game" description={<p>Personal Game Project</p>} variant="projectCard" />
+        </Link>
+        <Link to="/projects#chips">
+            <Card title="Fash and Chaps" description={<p>SWEN225 Chips Challenge Game</p>} variant="projectCard" />
+        </Link>
+        <Link to="/projects#recapp">
+            <Card title="Recapp" description={<p>VUW Hackathon 2025</p>} variant="projectCard" />
+        </Link>
+        <Link to="/projects#galaga">
+            <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
+        </Link>
+        <Link to="/projects#avc">
+            <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
+        </Link>
       </div>
     </div>
   );

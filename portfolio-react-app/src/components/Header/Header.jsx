@@ -21,7 +21,7 @@ function Header() {
         {/* Logo image */}
         <img src={logo} alt="Logo" className={styles.logo}/>
         {/* Site title */}
-        <h3 className={styles.navText}>hayley's portfolio</h3>
+        {/*<h3 className={styles.navText}>hayley's portfolio</h3> */}
     </header>
   );
 }

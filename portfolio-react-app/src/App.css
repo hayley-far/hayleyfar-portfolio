@@ -7,6 +7,7 @@ Styles for the root React element
   margin: 0 auto; /* center horizontally */
   padding: 0;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
