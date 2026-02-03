@@ -9,7 +9,6 @@ import styles from './ProjectTitle.module.css';
 function ProjectTitle() {
   return (
         <div className={styles.projectTitle}>
-                <h1>Projects</h1>
                 <div className={styles.keyCode}>
                   <div className={styles.codeItem}>
                     <div className={styles.codeSymbol} style={{ backgroundColor: "#ABD1D9" }} />

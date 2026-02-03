@@ -1,26 +1,29 @@
-.projectsSection {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.stickyContainer {
+  height: 300vh; /* controls how long horizontal scroll lasts */
+  position: relative;
+}
+
+.stickySection {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
+  justify-content: center;
 }
 
 .carouselContainer {
   display: flex;
-  overflow-x: auto;
-  overflow-y:hidden;
   gap: 40px;
-  padding: 10px;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; /* optional snapping */
-  margin-left: 1vw;
-  margin-right: 1vw;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
-.carouselContainer>a{
-flex-shrink: 0;
-text-decoration: none;
-color: inherit;
+.carouselContainer > a {
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
 }

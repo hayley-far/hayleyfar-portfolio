@@ -35,8 +35,8 @@ function ScrollReveal() {
           >
             <div className={styles.titleContent}>
               <h1>HAYLEY FAR</h1>
-              <p>Bachelor of Engineering, Software Engineering</p>
-              <p> Victoria University</p>
+              <p>Bachelor of Engineering (Honours) in Software</p>
+              <p>Victoria University of Wellington</p>
             </div>
           </div>
           {/* Information Section */}
