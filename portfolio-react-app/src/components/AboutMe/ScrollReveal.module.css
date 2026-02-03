@@ -1,0 +1,67 @@
+/* ScrollReveal.module.css */
+
+/* Spacer at the top */
+.spacer {
+  height: 15vh;
+  background: #A3B593;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sticky scroll container */
+.stickyContainer {
+  height: 200vh;
+}
+
+.stickySection {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Title Section - slides left */
+.titleSection {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #A3B593;
+  display: flex;
+  align-items: left;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  z-index: 2;
+  transition: transform 0.1s ease-out;
+}
+
+.titleContent {
+  color: #fff;
+}
+
+.titleContent h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+.titleContent p {
+  font-size: 20px;
+  opacity: 0.7;
+  text-align: left;
+}
+
+/* Information Section - revealed underneath */
+.aboutMeSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
