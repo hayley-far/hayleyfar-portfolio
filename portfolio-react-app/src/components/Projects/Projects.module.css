@@ -1,14 +1,26 @@
 .projectsSection {
   margin-top: 0px;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90vw;
 }
 
 .carouselContainer {
   display: flex;
   overflow-x: auto;
+  overflow-y:hidden;
   gap: 40px;
   padding: 10px;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory; /* optional snapping */
   margin-left: 5vw;
+  width: 100%;
+}
+
+.carouselContainer>a{
+flex-shrink: 0;
+text-decoration: none;
+color: inherit;
 }
