@@ -39,6 +39,7 @@ body {
   place-items: center; /* Center items both vertically and horizontally */
   min-width: 320px; /* Minimum width for small screens */
   min-height: 100vh; /* Full viewport height */
+  background-color: #F8F9FB;
 }
 
 /*

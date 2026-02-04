@@ -5,7 +5,7 @@ Styles for the main About Me section container
     /* Background image for the section */
     /* The path is relative to THIS CSS file */
   /*background-image: url('../../assets/background.jpeg');*/
-  background-color: white;
+  background-color: #F8F9FB;
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   width: 100vw;
   height: 90vh;
@@ -20,6 +20,7 @@ Styles for the main About Me section container
   padding: 30vh 10vw;
   text-align: right;
   line-height: 0.5;
+  color: #303359;
 }
 
 /*
@@ -38,7 +39,7 @@ Styles for the text box inside the About Me section
 }
 
 .container{
-    background-color: white;
+    background-color: #F8F9FB;
 }
 
 .arrow{

@@ -11,7 +11,7 @@
   width: 100vw; /* use percent to avoid viewport overflow */
   box-sizing: border-box;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 /* left column: carousel */

@@ -8,7 +8,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #A3B593;
+  background-color: #5B5F97;
   padding: 1vh 5vw;
   display: flex;
   justify-content: space-between; /* Space items evenly across the header */
@@ -25,7 +25,7 @@ a{
 
 /* Hover state */
 a:hover {
-  color: #53633F; /* change to any color you want */
+  color: #303359; /* change to any color you want */
 }
 
 .navText {
@@ -37,7 +37,6 @@ Navigation bar styles
 */
 nav {
     display: flex; /* display links in a row */
-    background-color: #A3B593;
     gap: 25px; /* space between links */
 }
 
