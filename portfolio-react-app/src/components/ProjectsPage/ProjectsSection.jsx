@@ -14,7 +14,7 @@ function ProjectSection() {
             {id: "chips",title: "Fash and Chaps", description: <p>Chips Challenge.</p>,color: "blue",},
             {id: "recapp",title: "Recapp", description: <p>Hackathon App.</p>,color: "blue",},
             {id: "galaga",title: "Galaga Game", description: <p>Retro arcade shooter.</p>,color: "blue",},
-            {id: "avc",title: "Autonomous Vehicle Challenge", description: <p>Self-driving competition project.</p>,color: "blue",},
+            {id: "avc",title: "Automated Vehicle Challenge", description: <p>Self-driving competition project.</p>,color: "blue",},
           ];
     const [activeProject, setActiveProject] = useState(projects[0]);
     useLayoutEffect(() => {

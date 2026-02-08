@@ -1,9 +1,18 @@
+@font-face {
+  font-family: 'Avenue X';
+  src: url('./assets/fonts/Avenue X.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*
 :root refers to the highest-level element in the document (the <html> element)
 These styles apply globally to the entire app
 */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Avenue X', system-ui, Aveniur, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -17,7 +26,6 @@ These styles apply globally to the entire app
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 /*
 Anchor (<a>) tag styles
 */

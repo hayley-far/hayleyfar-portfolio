@@ -24,12 +24,12 @@ function Skills() {
           />
           <Card
             title="Developer Tools & Software"
-            description={<p>GitHub/GitLab <br /> IntelliJ <br />  Vite <br /> Figma</p>}
+            description={<p>GitHub/GitLab <br /> IntelliJ <br /> Eclipse</p>}
             variant="skillsCard"
           />
           <Card
             title="Other Skills"
-            description={<p>AWS <br /> Docker & VMs <br /> Bash/Linux Terminal Commands</p>}
+            description={<p>AWS <br /> Docker & VMs</p>}
             variant="skillsCard"
           />
       </section>

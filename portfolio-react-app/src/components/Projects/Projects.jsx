@@ -46,7 +46,7 @@ function Projects() {
       {/* Sticky scroll container */}
       <div ref={containerRef} className={styles.stickyContainer}>
         <section className={styles.stickySection}>
-          <h2>Projects</h2>
+          <h2 style={{fontSize: 60 }}>Projects</h2>
 
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">
@@ -65,7 +65,7 @@ function Projects() {
               <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#avc">
-              <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
+              <Card title="Automated Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
             </Link>
           </div>
         </section>

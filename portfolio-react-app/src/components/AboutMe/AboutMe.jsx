@@ -18,7 +18,7 @@ function AboutMe() {
   return (
     <div className={styles.container}>
       <div className={styles.aboutMe}>
-        <h1>Welcome to my portfolio!</h1>
+        <h1 style={{fontSize: 60 }}>Welcome to my portfolio!</h1>
         <p>My About Me Section</p>
       </div>
       <a href="#skills" onClick={handleScrollToSkills}>
