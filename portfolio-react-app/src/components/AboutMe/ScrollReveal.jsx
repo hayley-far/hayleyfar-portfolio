@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import AboutMe from './AboutMe.jsx';
 import styles from './ScrollReveal.module.css';
-import neuebit from '../../assets/fonts/ppneuebit-bold.otf';
+import belagak from '../../assets/fonts/BelagakRegular-dr1zE.otf';
 
 const BLOB_CONFIGS = [
   { size: 250, lag: 0.05, morphSpeed: 3, offsetX: 10, offsetY: 2 },
@@ -106,8 +106,8 @@ function ScrollReveal() {
     <div>
       <style>{`
         @font-face {
-          font-family: 'Neue Bit';
-          src: url(${neuebit}) format('opentype');
+          font-family: 'Belagak';
+          src: url(${belagak}) format('opentype');
           font-weight: normal;
           font-style: normal;
           font-display: swap;
@@ -123,7 +123,7 @@ function ScrollReveal() {
             style={{ transform: `translateX(${-scrollProgress * 100}%)` }}
           >
             <div className={styles.titleContent}>
-              <h1 style={{ fontFamily: 'Neue Bit, sans-serif' }}>Hayley <br/> Far</h1>
+              <h1 style={{ fontFamily: 'Belagak, sans-serif' }}>Hayley <br/> Far</h1>
             </div>
           </div>
 
