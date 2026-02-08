@@ -1,7 +1,7 @@
 import React from 'react';
 // Import the logo image
 // Webpack/Vite will handle bundling this image
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo.PNG';
 // Import CSS Module styles
 // CSS Modules keep styles scoped to this component only
 import styles from './Header.module.css';

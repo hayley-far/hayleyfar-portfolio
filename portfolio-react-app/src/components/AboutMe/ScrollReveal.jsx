@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import AboutMe from './AboutMe.jsx';
 import styles from './ScrollReveal.module.css';
-import trafika from '../../assets/fonts/trafika-sans-trial.otf';
 import neuebit from '../../assets/fonts/ppneuebit-bold.otf';
 
 const BLOB_CONFIGS = [
@@ -27,7 +26,7 @@ function ScrollReveal() {
       setScrollProgress(progress);
     };
     handleScroll(); // set initial position
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -107,13 +106,6 @@ function ScrollReveal() {
     <div>
       <style>{`
         @font-face {
-          font-family: 'Trafika Sans';
-          src: url(${trafika}) format('opentype');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-        }
-        @font-face {
           font-family: 'Neue Bit';
           src: url(${neuebit}) format('opentype');
           font-weight: normal;
@@ -176,10 +168,31 @@ function ScrollReveal() {
                       transition: 'transform 0.1s linear',
                     }}
                   >
-                    <div className={styles.titleContent} style={{ color: '#fff' }}>
-                      <p>Bachelor of Engineering (Honours) in Software</p>
-                      <p>Victoria University of Wellington</p>
-                    </div>
+                    <pre className={styles.codeBlock}>
+                      <code>
+                        <span className={styles.keyword}>public class</span> AboutMe {"{"}
+                        {"\n"}  <span className={styles.keyword}>String</span> name;
+                        {"\n"}  <span className={styles.keyword}>String</span> status;
+                        {"\n"}  <span className={styles.keyword}>boolean</span> curiousByNature = <span className={styles.value}>true</span>;
+                        {"\n"}  <span className={styles.keyword}>String</span> energy = busyDay ? <span className={styles.value}>"Surviving"</span> : <span className={styles.value}>"Thriving"</span>;
+                        {"\n\n"}  <span className={styles.value}>/**</span>
+                        {"\n"}   <span className={styles.value}> * Who am I?</span>
+                        {"\n"}   <span className={styles.value}> */</span>
+                        {"\n"}  <span className={styles.keyword}>public</span> AboutMe() {"{"}
+                        {"\n"}    <span className={styles.keyword}>this.name</span> = <span className={styles.value}>"Hayley Far"</span>;
+                        {"\n"}    <span className={styles.keyword}>this.status</span> = getStatus();
+                        {"\n"}  {"}"}
+                        {"\n\n"}  <span className={styles.value}>/**</span>
+                        {"\n"}   <span className={styles.value}> * A method to get my current status as a student</span>
+                        {"\n"}   <span className={styles.value}> * @return String of what I do</span>
+                        {"\n"}   <span className={styles.value}> */</span>
+                        {"\n"}  <span className={styles.keyword}>public</span> String getStatus() {"{"}
+                        {"\n"}    <span className={styles.keyword}>return</span> <span className={styles.value}>"3rd year Software Engineering student at VUW"</span>;
+                        {"\n"}  {"}"}
+                        {"\n"}{"}"}
+                      </code>
+                    </pre>
+
                   </div>
                 </div>
               </div>

@@ -14,7 +14,7 @@
 }
 
 .projectCard{
-    background-color: #8B8FC7;
+    background-color: #E0DAF0;
     flex: 0 0 29%; /* 3 cards + peek */
     min-width: 150px;
     width: 380px;

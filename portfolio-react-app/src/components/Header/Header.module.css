@@ -14,6 +14,7 @@ header {
   justify-content: space-between; /* Space items evenly across the header */
   align-items: center; /* Vertically center items */
   z-index: 1000; /* Ensure header is above other content */
+  height: 13vh;
 }
 
 a{
@@ -44,7 +45,6 @@ nav {
 Logo image styles
 */
 .logo {
-  height: 70px;
-  border-radius: 50%;
+  height: 120px;
 
 }
