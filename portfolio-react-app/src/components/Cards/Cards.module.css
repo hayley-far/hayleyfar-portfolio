@@ -73,3 +73,7 @@
     width: 60vw;
     overflow-y: auto;
 }
+
+.date{
+    text-align: right;
+}

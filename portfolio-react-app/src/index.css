@@ -4,6 +4,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
 }
 
 

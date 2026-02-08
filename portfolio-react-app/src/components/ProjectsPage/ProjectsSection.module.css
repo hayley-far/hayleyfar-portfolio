@@ -36,5 +36,6 @@
   grid-column: 2 / 3;
   padding: 10px;
   padding-top: 40px;
-  overflow: hidden; /* or auto if it needs scrolling */
+  overflow: auto; /* or auto if it needs scrolling */
+  text-align: left;
 }

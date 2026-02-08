@@ -9,12 +9,12 @@ import Card from '../Cards/Cards.jsx';
 // Components are reusable pieces of UI
 function ProjectSection() {
     const projects = [
-            {id: "portfolio", title: "Portfolio Website", description: <p>My personal portfolio built with React.</p>, color: "pink",},
-            {id: "bomberman",title: "Bomberman Game", description: <p>A classic Bomberman clone.</p>, color: "pink",},
-            {id: "chips",title: "Fash and Chaps", description: <p>Chips Challenge.</p>,color: "blue",},
-            {id: "recapp",title: "Recapp", description: <p>Hackathon App.</p>,color: "blue",},
-            {id: "galaga",title: "Galaga Game", description: <p>Retro arcade shooter.</p>,color: "blue",},
-            {id: "avc",title: "Automated Vehicle Challenge", description: <p>Self-driving competition project.</p>,color: "blue",},
+            {id: "portfolio", title: "Portfolio Website", date: "Dec 2025 - Feb 2026 | React, JavaScript, HTML, CSS", description: <p>Designed and developed a personal portfolio website to showcase projects, technical skills and learn front-end development. Focused on a component-based structure and responsive design.</p>, color: "pink",},
+            {id: "bomberman",title: "Acorn Bomber", date: "Jan 2026 - Feb 2026 | Java, JSON, Swing, Piskel", description: <p>Developed a two-level Bomberman-style 2D game, implementing enemy AI with both random movement and A* pathfinding. Designed and created all original sprites used in the game.</p>, color: "pink",},
+            {id: "chips",title: "Fash and Chaps", date: "Sept 2025 - Oct 2025 | Java, JUnit, GitLab", description: <p>Worked in a team of six to develop a game inspired by Chip’s Challenge as part of the SWEN225 course. Designed and implemented the core game logic using a structured object-oriented architecture and applied multiple design patterns.</p>,color: "blue",},
+            {id: "recapp",title: "Recapp", date: "VUW Hackathon 2025 | TypeScript, JavaScript, GitHub", description: <p>Worked in a team of six to develop a private app for connecting with close friends and family, allowing users to share memories without the pressure of social media. Contributed to concept design and project presentation, while supporting teammates in development.</p>,color: "blue",},
+            {id: "galaga",title: "CGRA151 Final Project", date: "Sept 2024 - Oct 2024 | Processing (Java), Piskel", description: <p>Developed a three-level Galaga-style 2D game in Processing, implementing physics-based movement and object-oriented programming. Designed and created all original sprites used in the game.</p>,color: "blue",},
+            {id: "avc",title: "Automated Vehicle Challenge", date: "May 2024 - June 2024 | C++, Raspberry Pi, Linux", description: <p>Worked in a team of four to build and code a line-following robot to complete a course uninterrupted as part of the ENGR101 course. Coordinated team activities to manage time effectively and supported teammates, while focusing on testing and debugging.</p>,color: "blue",},
           ];
     const [activeProject, setActiveProject] = useState(projects[0]);
     useLayoutEffect(() => {
@@ -74,6 +74,7 @@ function ProjectSection() {
               <Card
                 title={activeProject.title}
                 description={activeProject.description}
+                date={activeProject.date}
                 variant="mainContentCard"
                 color={activeProject.color}
               />

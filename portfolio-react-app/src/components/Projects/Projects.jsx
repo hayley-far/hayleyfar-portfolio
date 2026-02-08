@@ -50,10 +50,10 @@ function Projects() {
 
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">
-              <Card title="Portfolio Website" description={<p>This website :)</p>} variant="projectCard" />
+              <Card title="Portfolio Website" description={<p>This portfolio website</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#bomberman">
-              <Card title="Bomberman Game" description={<p>Personal Game Project</p>} variant="projectCard" />
+              <Card title="Acorn Bomber" description={<p>2D Bomberman-style game</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#chips">
               <Card title="Fash and Chaps" description={<p>SWEN225 Chips Challenge Game</p>} variant="projectCard" />
@@ -62,7 +62,7 @@ function Projects() {
               <Card title="Recapp" description={<p>VUW Hackathon 2025</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#galaga">
-              <Card title="Galaga Game" description={<p>CGRA151 Project</p>} variant="projectCard" />
+              <Card title="Galaga Game" description={<p>CGRA151 Final Project</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#avc">
               <Card title="Automated Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />

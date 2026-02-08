@@ -19,23 +19,19 @@ Styles for the main About Me section container
   */
   padding: 30vh 10vw;
   text-align: right;
-  line-height: 0.5;
+  line-height: 1.5;
   color: #303359;
+  align-items: flex-end; /* Align children to the right */
 }
 
-/*
-Styles for the text box inside the About Me section
-*/
-.aboutMeText {
-  position: absolute; /* Position relative to the nearest positioned ancestor */
-  left: 5vw;     /* horizontal distance from left edge */
-  bottom: 15vh;   /* vertical distance from bottom edge */
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px; /* Limit maximum width */
-  color: #000;
-  line-height: 0.5;
-  z-index: 2; /* Ensure text appears above background */
+.aboutMe p{
+    font-size: 18px;
+    opacity: 0.7;
+    text-align: right;
+    padding-right: 0vw;
+    width: 50%;
+    justify-item: right;
+    position: relative;
 }
 
 .container{

@@ -19,7 +19,9 @@ function AboutMe() {
     <div className={styles.container}>
       <div className={styles.aboutMe}>
         <h1 style={{fontSize: 60 }}>Welcome to my portfolio!</h1>
-        <p>My About Me Section</p>
+        <p>I am currently in my penultimate-year of studying Software Engineering at Victoria University of Wellington, with a
+            passion for building interactive projects. I enjoy experimenting with new technologies and approaches, and I’m
+            always keen to take on challenges that help me grow my skills.</p>
       </div>
       <a href="#skills" onClick={handleScrollToSkills}>
         <img src={arrow} alt="Down arrow" className={styles.arrow}/>

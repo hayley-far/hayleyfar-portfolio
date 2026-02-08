@@ -14,7 +14,16 @@ function Skills() {
       <section id="skills" className={styles.gridContainer}>
           <Card
             title="Languages"
-            description={<p>Java <br /> C/C++ <br /> JavaScript <br /> HTML/CSS <br /> Python</p>}
+            description={
+              <p>
+                Java <br />
+                C/C<span style={{ fontFamily: "monospace" }}>++</span> <br />
+                JavaScript <br />
+                HTML/CSS <br />
+                Python
+              </p>
+            }
+
             variant="skillsCard"
           />
           <Card

@@ -7,7 +7,7 @@ import logo from '../../assets/logo.jpeg';
 import './Cards.module.css';
 import styles from './Cards.module.css';
 
-function Card({ title, description, variant, color, isActive, onClick }) {
+function Card({ title, description, date, variant, color, isActive, onClick }) {
   return (
     <div
       className={`${styles.card} ${styles[variant]} ${color ? styles[color] : ""} ${isActive ? styles.active : ""}`}
@@ -16,6 +16,7 @@ function Card({ title, description, variant, color, isActive, onClick }) {
       tabIndex={onClick ? 0 : undefined}
     >
       <h3>{title}</h3>
+      {date && <p className={styles.date}>{date}</p>}
       {description}
     </div>
   );
