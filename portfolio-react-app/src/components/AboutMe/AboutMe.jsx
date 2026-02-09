@@ -19,7 +19,7 @@ function AboutMe() {
     <div className={styles.container}>
       <div className={styles.aboutMe}>
         <h1 style={{fontSize: 60 }}>Welcome to my portfolio!</h1>
-        <p>I am currently in my penultimate-year of studying Software Engineering at Victoria University of Wellington, with a
+        <p>I am currently in my penultimate-year studying Software Engineering at Victoria University of Wellington, with a
             passion for building interactive projects. I enjoy experimenting with new technologies and approaches, and I’m
             always keen to take on challenges that help me grow my skills.</p>
       </div>

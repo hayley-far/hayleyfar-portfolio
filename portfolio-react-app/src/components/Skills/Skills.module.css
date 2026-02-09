@@ -5,5 +5,6 @@
     gap: 20px;
     padding: 5vh 5vw;
     background-color: #C3E4EB;
+    margin-bottom: -10vh; /* FIXED: negative margin to pull up the next section for the scrolling */
 }
 

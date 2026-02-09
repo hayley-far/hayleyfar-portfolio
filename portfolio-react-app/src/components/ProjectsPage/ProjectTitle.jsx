@@ -11,16 +11,14 @@ function ProjectTitle() {
         <div className={styles.projectTitle}>
                 <div className={styles.keyCode}>
                   <div className={styles.codeItem}>
-                    <div className={styles.codeSymbol} style={{ backgroundColor: "#ABD1D9" }} />
+                    <div className={styles.codeSymbol} style={{ backgroundColor: "#C3E4EB" }} />
                     <span>University</span>
                   </div>
                   <div className={styles.codeItem}>
-                    <div className={styles.codeSymbol} style={{ backgroundColor: "#D4B0C5" }} />
+                    <div className={styles.codeSymbol} style={{ backgroundColor: "#EBC3E4" }} />
                     <span>Personal</span>
                   </div>
                 </div>
-
-
         </div>
     );
 }

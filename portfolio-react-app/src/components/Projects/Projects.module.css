@@ -1,6 +1,7 @@
 .stickyContainer {
-  height: 300vh; /* controls how long horizontal scroll lasts */
+  height: 300vh;
   position: relative;
+  overflow: visible;
 }
 
 .stickySection {
@@ -10,18 +11,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: visible;
+  padding-top: 0vh;
 }
 
+/* css */
 .carouselContainer {
   display: flex;
   gap: 40px;
-  overflow: hidden;
+  overflow-x: auto;      /* allow horizontal scrolling */
+  overflow-y: visible;   /* allow scaled cards to show outside vertically */
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 0px;
-  padding-bottom: 20px;
+  padding: 10px 40px 30px; /* extra bottom padding so scaled card isn't cut off */
   color: #303359;
+  align-items: center;   /* vertically center cards inside the track */
+  scrollbar-width: none;
 }
+
 
 .carouselContainer > a {
   flex-shrink: 0;
