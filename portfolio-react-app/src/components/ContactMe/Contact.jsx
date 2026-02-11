@@ -2,7 +2,7 @@ import React from 'react';
 // Import the CSS Module file
 // CSS Modules scope styles locally to this component
 import styles from './Contact.module.css';
-import profile from '../../assets/profile.jpeg';
+import profile from '../../assets/logo.PNG';
 
 // Icons
 import email from '../../assets/emailIcon.jpeg';
@@ -15,7 +15,7 @@ function Contact() {
   return (
     <div className={styles.contactSection}>
       <div className={styles.left}>
-        <h2 style={{fontSize: 50 }}>Contact Me</h2>
+        <h2 style={{fontSize: 50 }}>// contact me</h2>
         <div className={styles.contactInfo}>
           <a href="https://www.linkedin.com/in/hayley-far-33a366355/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="LinkedIn Icon" className={styles.icon} />

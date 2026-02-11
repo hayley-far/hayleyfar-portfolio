@@ -21,7 +21,7 @@ These styles apply globally to the entire app
 
   color-scheme: light dark; /* Enable automatic light/dark mode based on user preference */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #131930;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,7 +49,7 @@ body {
   place-items: center; /* Center items both vertically and horizontally */
   min-width: 320px; /* Minimum width for small screens */
   min-height: 100vh; /* Full viewport height */
-  background-color: #F8F9FB;
+  background-color: #131930;
 }
 
 /*
@@ -96,7 +96,7 @@ Applied when the user's system is set to light mode
 */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #fff;
     background-color: #ffffff;
   }
   a:hover {

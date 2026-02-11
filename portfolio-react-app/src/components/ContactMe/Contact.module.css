@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #F2F3F5;
+  background-color: #131930;
   padding: 40px;
 }
 
@@ -25,10 +25,10 @@
 }
 
 .img{
-    width: 25%;
-    height: 25%;
-    margin-right: 200px;
-    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin-right: 100px;
+    margin-top: -15vh;
 }
 
 .icon {

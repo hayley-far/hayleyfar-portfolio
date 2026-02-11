@@ -123,7 +123,8 @@ function ScrollReveal() {
             style={{ transform: `translateX(${-scrollProgress * 100}%)` }}
           >
             <div className={styles.titleContent}>
-              <h1 style={{ fontFamily: 'Belagak, sans-serif' }}>Hayley <br/> Far</h1>
+                <p style={{fontSize: 30, color: "#a882bf"}}> Hi, my name is </p>
+              <h1 style={{ fontFamily: 'Belagak, sans-serif' }}>Hayley Far</h1>
             </div>
           </div>
 

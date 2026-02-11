@@ -8,13 +8,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4A52A8;
+  background-color: #131930;
   padding: 1vh 5vw;
   display: flex;
   justify-content: space-between; /* Space items evenly across the header */
   align-items: center; /* Vertically center items */
   z-index: 1000; /* Ensure header is above other content */
   height: 13vh;
+  opacity: 0.9;
 }
 
 a{
@@ -26,7 +27,7 @@ a{
 
 /* Hover state */
 a:hover {
-  color: #303359; /* change to any color you want */
+  color: #63ad7d;
 }
 
 .navText {

@@ -46,7 +46,8 @@ function Projects() {
       {/* Sticky scroll container */}
       <div ref={containerRef} className={styles.stickyContainer}>
         <section className={styles.stickySection}>
-          <h2 style={{fontSize: 50 }}>Projects</h2>
+          <h2 style={{fontSize: 50}}>// projects</h2>
+          <p className={styles.subTitle}> {'>'} Click on a project to learn more about it!</p>
 
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">

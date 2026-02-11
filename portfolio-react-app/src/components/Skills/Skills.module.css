@@ -3,8 +3,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 5vh 5vw;
-    background-color: #C3E4EB;
+    padding: 0vh 5vw;
+    background-color: #131930;
     margin-bottom: -10vh; /* FIXED: negative margin to pull up the next section for the scrolling */
+    z-index: 1; /* Ensure this section is above the next section for scrolling effect */
 }
 
