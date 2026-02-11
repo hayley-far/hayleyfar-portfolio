@@ -24,10 +24,13 @@
   padding: 10px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-padding-top: 25px;
   box-sizing: border-box;
-  /* optional: ensure it sits in the first column */
   grid-column: 1 / 2;
-  margin-top: 13px;
+  padding-right: 27px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 /* right column: main content */

@@ -28,6 +28,7 @@
   color: #303359;
   align-items: center;   /* vertically center cards inside the track */
   scrollbar-width: none;
+  padding-top: 25px;
 }
 
 
