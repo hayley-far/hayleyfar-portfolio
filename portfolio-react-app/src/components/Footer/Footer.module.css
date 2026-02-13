@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 40px; /* allow content + padding without clipping */
-  background-color: #131930;
+  background-color: #1D2638;
   color: #ffffff;
   text-align: center;
   display: flex;

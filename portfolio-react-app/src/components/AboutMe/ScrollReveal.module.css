@@ -3,7 +3,7 @@
 /* Spacer at the top */
 .spacer {
   height: 5vh;
-  background: #131930;
+  background: #1D2638;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #131930;
+  background: #1D2638;
   display: flex;
   align-items: left;
   padding-left: 10vw;
