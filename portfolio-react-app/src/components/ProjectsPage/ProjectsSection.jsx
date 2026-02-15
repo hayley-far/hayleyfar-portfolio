@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useRef } from 'react';
 // Import the CSS Module file
 // CSS Modules scope styles locally to this component
 import styles from './ProjectsSection.module.css';
@@ -25,6 +25,8 @@ function ProjectSection() {
             {id: "avc",title: "Automated Vehicle Challenge", date: "May 2024 - June 2024 | C++, Raspberry Pi, Linux", description: <p>Worked in a team of four to build and code a line-following robot to complete a course uninterrupted as part of the ENGR101 course. Coordinated team activities to manage time effectively and supported teammates, while focusing on testing and debugging.</p>,color: "green", image: avcImg,},
           ];
     const [activeProject, setActiveProject] = useState(projects[0]);
+    const carouselRef = useRef(null);
+
     useLayoutEffect(() => {
         // stop browser restoring previous scroll position
         if ('scrollRestoration' in window.history) {
@@ -57,12 +59,32 @@ function ProjectSection() {
         });
       }, []);
 
+    // Scroll the left carousel so the active project element is visible
+    useLayoutEffect(() => {
+      const container = carouselRef.current;
+      if (!container || !activeProject || !activeProject.id) return;
+      const el = container.querySelector(`#${activeProject.id}`);
+      if (!el) return;
+
+      // element and container rects
+      const containerRect = container.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+
+      // compute element top relative to container's scroll top
+      const relativeTop = elRect.top - containerRect.top + container.scrollTop;
+
+      // center the element in the container (adjust as needed)
+      const offset = Math.max(0, relativeTop - (container.clientHeight - elRect.height) / 2);
+
+      container.scrollTo({ top: offset, behavior: 'smooth' });
+    }, [activeProject]);
+
 
 
   return (
       <section className={styles.projectsSection}>
             {/* Left column */}
-            <div className={styles.carouselContainer}>
+            <div className={styles.carouselContainer} ref={carouselRef}>
               {projects.map((project) => (
                <div key={project.id} id={project.id}>
                 <Card

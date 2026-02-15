@@ -15,7 +15,6 @@
 
 .description {
   color: #a882bf;
-  padding-left: 20px;
 }
 
 .projectCard{
@@ -118,5 +117,9 @@
     display: flex;
     grid-template-columns: 1fr 1fr;
     padding-top: 10px;
+}
+
+.mainContentCard .description{
+    padding-left: 20px;
 }
 
