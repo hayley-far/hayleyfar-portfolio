@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import AboutMe from './AboutMe.jsx';
 import styles from './ScrollReveal.module.css';
-import belagak from '../../assets/fonts/BelagakRegular-dr1zE.otf';
+import pixel from '../../assets/fonts/Mister Pixel Regular.otf';
 
 function ScrollReveal() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -26,8 +26,8 @@ function ScrollReveal() {
     <div>
       <style>{`
         @font-face {
-          font-family: 'Belagak';
-          src: url(${belagak}) format('opentype');
+          font-family: 'Mister Pixel';
+          src: url(${pixel}) format('opentype');
           font-weight: normal;
           font-style: normal;
           font-display: swap;
@@ -44,7 +44,7 @@ function ScrollReveal() {
           >
             <div className={styles.titleContent}>
               <p> Hi, my name is </p>
-              <h1>Hayley Far</h1>
+              <h1 style={{ fontFamily: "Mister Pixel"}}>Hayley Far</h1>
             </div>
           </div>
 

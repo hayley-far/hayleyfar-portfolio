@@ -66,7 +66,7 @@ function Projects() {
               <Card title="Star Swarm" description={<p>CGRA151 Galaga-style game</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#avc">
-              <Card title="Automated Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
+              <Card title="Autonomous Vehicle Challenge" description={<p>ENGR101 Robot Project</p>} variant="projectCard" />
             </Link>
           </div>
         </section>
