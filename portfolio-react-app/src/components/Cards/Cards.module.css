@@ -15,6 +15,7 @@
 
 .description {
   color: #a882bf;
+  padding-left: 20px;
 }
 
 .projectCard{
@@ -104,11 +105,18 @@
 }
 
 .image {
-  width: 100%;
-  height: auto;
-  max-height: 26vh; /* keeps image from growing too tall on smaller cards */
+  width: auto;
+  height: 250px;
   object-fit: contain; /* preserves full image without cropping */
   display: block;
   border-radius: 12px;
   margin-bottom: 12px;
+  justify-self: left;
 }
+
+.mainContentCard .content{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+}
+

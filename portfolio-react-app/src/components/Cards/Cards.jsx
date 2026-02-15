@@ -17,8 +17,10 @@ function Card({ title, description, date, variant, color, isActive, onClick, ima
     >
       <h3>{title}</h3>
       {date && <p className={styles.date}>{date}</p>}
-      {description && <p className={styles.description}>{description}</p>}
-      {image && <img src={image} alt={`${title} image`} className={styles.image} />}
+      <div className={styles.content}>
+        {image && <img src={image} alt={`${title} image`} className={styles.image} />}
+        {description && <p className={styles.description}>{description}</p>}
+      </div>
     </div>
   );
 }
