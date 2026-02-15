@@ -102,3 +102,13 @@
 .projectPageCard h3{
     color: white;
 }
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 26vh; /* keeps image from growing too tall on smaller cards */
+  object-fit: contain; /* preserves full image without cropping */
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}

@@ -7,7 +7,7 @@ import logo from '../../assets/logo.jpeg';
 import './Cards.module.css';
 import styles from './Cards.module.css';
 
-function Card({ title, description, date, variant, color, isActive, onClick }) {
+function Card({ title, description, date, variant, color, isActive, onClick, image }) {
   return (
     <div
       className={`${styles.card} ${styles[variant]} ${color ? styles[color] : ""} ${isActive ? styles.active : ""}`}
@@ -18,6 +18,7 @@ function Card({ title, description, date, variant, color, isActive, onClick }) {
       <h3>{title}</h3>
       {date && <p className={styles.date}>{date}</p>}
       {description && <p className={styles.description}>{description}</p>}
+      {image && <img src={image} alt={`${title} image`} className={styles.image} />}
     </div>
   );
 }
