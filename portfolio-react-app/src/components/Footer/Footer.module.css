@@ -1,7 +1,11 @@
-.footer{
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    height: 40px;
-    background-color: #A3B593;
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 10vh; /* allow content + padding without clipping */
+  background-color: #1D2638;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

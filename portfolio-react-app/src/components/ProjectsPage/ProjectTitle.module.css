@@ -1,23 +1,31 @@
-.projectTitle{
-    margin-top: 130px;
-    margin-bottom: 0px;
+/* css */
+.projectTitle {
+  margin-top: 20vh;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw; /* breathing room on both sides */
 }
 
+/* push code items to the right dynamically */
 .keyCode {
   display: flex;
-  gap: 20px; /* spacing between circle+text pairs */
-  padding-left: 1200px;
+  gap: 1vw;
+  margin-left: auto; /* important: makes this group stick to the right */
+  align-items: center;
 }
 
+/* circle + text pair */
 .codeItem {
   display: flex;
-  align-items: center; /* vertical center circle & text */
-  gap: 6px; /* spacing between circle and its text */
+  align-items: center;
+  gap: 1vw;
+  margin-right: 2vw;
 }
 
+/* circle */
 .codeSymbol {
   width: 16px;
   height: 16px;
   border-radius: 50%;
 }
-

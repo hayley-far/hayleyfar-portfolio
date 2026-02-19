@@ -9,19 +9,16 @@ import styles from './ProjectTitle.module.css';
 function ProjectTitle() {
   return (
         <div className={styles.projectTitle}>
-                <h1>Projects</h1>
                 <div className={styles.keyCode}>
                   <div className={styles.codeItem}>
-                    <div className={styles.codeSymbol} style={{ backgroundColor: "#ABD1D9" }} />
+                    <div className={styles.codeSymbol} style={{ backgroundColor: "#63ad7d" }} />
                     <span>University</span>
                   </div>
                   <div className={styles.codeItem}>
-                    <div className={styles.codeSymbol} style={{ backgroundColor: "#D4B0C5" }} />
+                    <div className={styles.codeSymbol} style={{ backgroundColor: "#a882bf" }} />
                     <span>Personal</span>
                   </div>
                 </div>
-
-
         </div>
     );
 }

@@ -1,6 +1,8 @@
+// portfolio-react-app/src/components/AboutMe/ScrollReveal.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import AboutMe from './AboutMe.jsx';
 import styles from './ScrollReveal.module.css';
+import pixel from '../../assets/fonts/Mister Pixel Regular.otf';
 
 function ScrollReveal() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -11,35 +13,41 @@ function ScrollReveal() {
       if (!containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const progress = Math.min(Math.max(-rect.top / (rect.height - windowHeight), 0), 1);
+      const denom = Math.max(rect.height - windowHeight, 1);
+      const progress = Math.min(Math.max(-rect.top / denom, 0), 1);
       setScrollProgress(progress);
     };
-
-    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // set initial position
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div>
-      {/* Spacer */}
-      <div className={styles.spacer}></div>
+      <style>{`
+        @font-face {
+          font-family: 'Mister Pixel';
+          src: url(${pixel}) format('opentype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+        }
+      `}</style>
 
-      {/* Sticky Section */}
+      <div className={styles.spacer} />
+
       <div ref={containerRef} className={styles.stickyContainer}>
         <div className={styles.stickySection}>
-
-          {/* Title Section */}
           <div
             className={styles.titleSection}
             style={{ transform: `translateX(${-scrollProgress * 100}%)` }}
           >
             <div className={styles.titleContent}>
-              <h1>HAYLEY FAR</h1>
-              <p>Bachelor of Engineering, Software Engineering</p>
-              <p> Victoria University</p>
+              <p> Hi, my name is </p>
+              <h1 style={{ fontFamily: "Mister Pixel"}}>Hayley Far</h1>
             </div>
           </div>
-          {/* Information Section */}
+
           <div className={styles.aboutMeSection}>
             <AboutMe />
           </div>

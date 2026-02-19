@@ -1,26 +1,53 @@
-.projectsSection {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.stickyContainer {
+  height: 300vh;
+  position: relative;
+  overflow: visible;
+}
+
+.stickySection {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
+  justify-content: center;
+  padding-top: 0vh;
+  background-color: #1D2638;
 }
 
+/* css */
 .carouselContainer {
   display: flex;
-  overflow-x: auto;
-  overflow-y:hidden;
-  gap: 40px;
-  padding: 10px;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; /* optional snapping */
-  margin-left: 1vw;
-  margin-right: 1vw;
+  gap: 2vw; /* space between cards */
+  overflow-x: auto;      /* allow horizontal scrolling */
+  overflow-y: visible;   /* allow scaled cards to show outside vertically */
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 0;
+  color: #303359;
+  align-items: center;   /* vertically center cards inside the track */
+  scrollbar-width: none;
+  padding-top: 5vh;
 }
 
-.carouselContainer>a{
-flex-shrink: 0;
-text-decoration: none;
-color: inherit;
+
+.carouselContainer > a {
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+h2{
+    color: #C3E4EB;
+}
+
+.subTitle {
+    color: #C3E4EB;
+    text-align: left;
+    margin-left: 10vw;
+    margin-top: 0;
+}
+
+.spacer {
+    height: 8vh;
 }

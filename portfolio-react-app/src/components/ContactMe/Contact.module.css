@@ -1,44 +1,79 @@
+/* css */
 .contactSection {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #ABD1D9;
-  padding: 40px;
+  background-color: #1D2638;
+  flex-direction: row; /* allow wrapping/responsive changes */
 }
 
-
+/* keep content flexible and wrap when needed */
 .contactInfo {
   display: flex;
-  gap: 25px;
-  margin-top: 20px;
+  gap: 4vw;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-left: 100px;
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 10vw;
 }
-.left h2{
-    margin: 0px;
-    margin-bottom: 20px; /* Space between heading and contact info. may change */
-}
-
-.img{
-    width: 25%;
-    height: 25%;
-    margin-right: 200px;
-    border-radius: 50%;
+.left h2 {
+  margin: 0;
 }
 
+/* make image responsive, remove negative margin-top */
+.img {
+  width: 40%;
+  height: auto;
+  max-width: 420px;
+  min-width: 200px;
+  margin-right: 6vw;
+  margin-top: 0;
+  object-fit: cover;
+}
+
+/* icons scale with viewport but clamp to sensible sizes */
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 4vw;
+  height: 4vw;
   border-radius: 20%;
   cursor: pointer;
   transition: transform 0.2s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
 
 .icon:hover {
   transform: scale(1.1);
+}
+
+/* Responsive: switch to single column on smaller screens */
+@media (max-width: 900px) {
+  .contactSection,
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    width: 80%;
+    max-width: 360px;
+    min-width: 0;
+    margin: 2vh 0 0 0;
+  }
+
+  .icon {
+    width: 10vw;
+    height: 10vw;
+  }
 }

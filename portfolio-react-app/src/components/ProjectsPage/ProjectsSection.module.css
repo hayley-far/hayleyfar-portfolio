@@ -1,17 +1,17 @@
 /* File: portfolio-react-app/src/components/ProjectsPage/ProjectsSection.module.css */
 .projectsSection {
   position: relative;
-  padding: 50px;
-  padding-top: 0px;
+  padding: 2vw;
+  padding-top: 0;
   display: grid;
   grid-template-columns: 2fr 5fr; /* use a space, not a comma */
-  gap: 50px;
+  gap: 3vw; /* space between columns */
   align-items: start;
   height: 70vh;
   width: 100vw; /* use percent to avoid viewport overflow */
   box-sizing: border-box;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 7vh;
 }
 
 /* left column: carousel */
@@ -20,21 +20,24 @@
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
-  gap: 40px;
-  padding: 10px;
+  gap: 5vh; /* space between cards */
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-padding-top: 5vh; /* space between first card and carousel */
   box-sizing: border-box;
-  /* optional: ensure it sits in the first column */
   grid-column: 1 / 2;
-  margin-top: 13px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 3vh;
+  padding-top: 4vh;
 }
 
 /* right column: main content */
 .mainContent {
   box-sizing: border-box;
   grid-column: 2 / 3;
-  padding: 10px;
-  padding-top: 40px;
-  overflow: hidden; /* or auto if it needs scrolling */
+  padding: 2vw;
+  padding-top: 4vh;
+  overflow: auto; /* or auto if it needs scrolling */
+  text-align: left;
 }

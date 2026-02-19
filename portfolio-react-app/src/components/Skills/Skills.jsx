@@ -11,28 +11,34 @@ import Card from '../Cards/Cards.jsx';
 
 function Skills() {
   return (
-      <section id="skills" className={styles.gridContainer}>
+      <>
+      <section id="skills" className={styles.header}>
+          <h2 style={{fontSize: 50}}>// skills</h2>
+      </section>
+      <p className={styles.subTitle}> {'>'} Technical skills in programming and software development gained through university and personal projects. </p>
+      <section className={styles.gridContainer}>
           <Card
             title="Languages"
-            description={<p>Java <br /> C/C++ <br /> JavaScript <br /> HTML/CSS <br /> Python</p>}
+            description={<p>Java   |   C/C++   |   JavaScript   |   HTML/CSS   |   Python</p>}
             variant="skillsCard"
           />
           <Card
             title="Frameworks"
-            description={<p>Java Swing <br />React <br /> JUnit</p>}
+            description={<p>Java Swing   |   React   |   JUnit</p>}
             variant="skillsCard"
           />
           <Card
             title="Developer Tools & Software"
-            description={<p>GitHub/GitLab <br /> IntelliJ <br />  Vite <br /> Figma</p>}
+            description={<p>Git (GitHub/GitLab)   |   IntelliJ   |   Eclipse</p>}
             variant="skillsCard"
           />
           <Card
             title="Other Skills"
-            description={<p>AWS <br /> Docker & VMs <br /> Bash/Linux Terminal Commands</p>}
+            description={<p>AWS   |   Docker   |   Bash/Linux Command-Line</p>}
             variant="skillsCard"
           />
       </section>
+      </>
   );
 }
 export default Skills

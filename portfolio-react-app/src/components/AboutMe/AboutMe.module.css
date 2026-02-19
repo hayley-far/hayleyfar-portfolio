@@ -1,49 +1,106 @@
 /*
 Styles for the main About Me section container
 */
+/* .aboutMe */
 .aboutMe {
-    /* Background image for the section */
-    /* The path is relative to THIS CSS file */
-  /*background-image: url('../../assets/background.jpeg');*/
-  background-color: white;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  width: 100vw;
-  height: 90vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  left: 0;
-  /* Space inside the container
-  30vh = vertical padding (top & bottom)
-  10vw = horizontal padding (left & right)
-  */
-  padding: 30vh 10vw;
   text-align: right;
-  line-height: 0.5;
+  line-height: 1.5;
+
 }
 
-/*
-Styles for the text box inside the About Me section
-*/
-.aboutMeText {
-  position: absolute; /* Position relative to the nearest positioned ancestor */
-  left: 5vw;     /* horizontal distance from left edge */
-  bottom: 15vh;   /* vertical distance from bottom edge */
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px; /* Limit maximum width */
-  color: #000;
-  line-height: 0.5;
-  z-index: 2; /* Ensure text appears above background */
+
+/* .aboutMe p */
+.aboutMe p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 0;
+  opacity: 0.95;
+  padding-left: 8vw;
 }
 
-.container{
-    background-color: white;
+
+/* .container */
+/* .container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  min-height: 90vh;
+  padding: 8vh 10vw;
+  box-sizing: border-box;
+  background-color: #1D2638;
+  color: #C3E4EB;
+  margin-top: 20vh;
 }
 
-.arrow{
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    align-self: center;
+
+/* .content */
+.content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* change to single column on smaller screens */
+@media (max-width: 868px) {
+  .content {
+    padding-top: 15vh;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .aboutMe {
+    text-align: center;
+  }
+
+  .aboutMe p {
+    font-size: 16px;
+  }
+}
+
+/* .arrowLink */
+.arrowLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* .arrow */
+.arrow {
+  width: 5vh;
+  height: auto;
+  display: block;
+  padding-top: 15vh;
+  padding-bottom: 6vh;
+}
+
+
+
+/* .left */
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+
+/* .img */
+.img {
+  width: clamp(200px, 20vw, 400px);
+  max-width: 100%;
+  /*min-width: 250px; */
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
+  margin-top: 5vh;
 }
