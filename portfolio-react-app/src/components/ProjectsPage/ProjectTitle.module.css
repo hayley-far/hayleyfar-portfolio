@@ -1,17 +1,16 @@
 /* css */
 .projectTitle {
-  margin-top: 130px;
+  margin-top: 20vh;
   margin-bottom: 0;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 0 24px; /* breathing room on both sides */
+  padding: 0 2vw; /* breathing room on both sides */
 }
 
 /* push code items to the right dynamically */
 .keyCode {
   display: flex;
-  gap: 20px;
+  gap: 1vw;
   margin-left: auto; /* important: makes this group stick to the right */
   align-items: center;
 }
@@ -20,8 +19,8 @@
 .codeItem {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-right: 40px;
+  gap: 1vw;
+  margin-right: 2vw;
 }
 
 /* circle */

@@ -1,7 +1,7 @@
 .footer {
   box-sizing: border-box;
   width: 100%;
-  min-height: 40px; /* allow content + padding without clipping */
+  min-height: 10vh; /* allow content + padding without clipping */
   background-color: #1D2638;
   color: #ffffff;
   text-align: center;

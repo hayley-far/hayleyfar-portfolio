@@ -39,13 +39,13 @@ Navigation bar styles
 */
 nav {
     display: flex; /* display links in a row */
-    gap: 25px; /* space between links */
+    gap: 3vw; /* space between links */
 }
 
 /*
 Logo image styles
 */
 .logo {
-  height: 120px;
+  height: 15vh;
 
 }

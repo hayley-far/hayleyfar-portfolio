@@ -2,18 +2,19 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 5vh; /* Adjust the gap between rows as needed */
     padding: 0vh 5vw;
     background-color: #1D2638;
-    margin-bottom: -10vh; /* FIXED: negative margin to pull up the next section for the scrolling */
+    margin-bottom: -15vh; /* FIXED: negative margin to pull up the next section for the scrolling */
     z-index: 1; /* Ensure this section is above the next section for scrolling effect */
 }
 
 .subTitle {
     color: #C3E4EB;
     text-align: left;
-    margin-left: 150px;
-    margin-top: 0px;
-    margin-bottom: 35px;
+    margin-left: 10vw;
+    margin-top: 0;
+    margin-bottom: 8vh;
+    margin-right: 10vw;
 }
 

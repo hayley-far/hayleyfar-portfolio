@@ -21,7 +21,7 @@ These styles apply globally to the entire app
 
   color-scheme: light dark; /* Enable automatic light/dark mode based on user preference */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #111827;
+  background-color: #1D2638;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

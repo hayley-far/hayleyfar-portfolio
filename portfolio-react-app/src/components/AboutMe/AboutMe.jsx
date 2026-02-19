@@ -8,7 +8,7 @@ function AboutMe() {
     e.preventDefault();
     const skillsSection = document.getElementById('skills');
     const navbarHeight = 90;
-    const offsetPosition = skillsSection.offsetTop - navbarHeight - 70;
+    const offsetPosition = skillsSection.offsetTop - navbarHeight - 100;
     window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   };
 

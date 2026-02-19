@@ -10,7 +10,8 @@
 
 .skillsCard{
     text-align: left;
-    margin-left: 80px;
+    margin-left: 5vw;
+    width: 80%;
 }
 
 .description {
@@ -20,12 +21,14 @@
 .projectCard{
     background-color: #1D2638;
     flex: 0 0 29%; /* 3 cards + peek */
-    min-width: 150px;
-    width: 380px;
+    min-width: 380px;
     scroll-snap-align: start;
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 40px;
-    padding-top: 20px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     border: 2px solid white;
     border-color: white;
 }
@@ -34,7 +37,7 @@
     box-shadow: 0 0 20px 2px rgba(74,82,168,0.9);
 }
 
-.projectPageCard{
+.projectPageCard{ /* smaller cards for projects page carousel */
     flex: 0 0 20%; /* 3 cards + peek */
     text-align: center;
     display: flex;
@@ -42,7 +45,7 @@
     justify-content: center;
     min-width: 150px;
     scroll-snap-align: start;
-    height: 100px;
+    height: 13vh;
     border-radius: 40px;
     opacity: 0.7;
 }
@@ -58,10 +61,9 @@
     opacity: 1;
     transform: scale(1.02);
     box-shadow: 0 0 20px 2px rgba(74,82,168,0.9);
-    margin-right: 30px;
 }
 
-.pink {
+.purple {
   --border-color: #a882bf;
   border: 2px solid var(--border-color);
 }
@@ -71,7 +73,7 @@
   border: 2px solid var(--border-color);
 }
 
-.pink .description,
+.purple .description,
 .green .description {
   color: var(--border-color);
 }
@@ -79,10 +81,11 @@
 .mainContentCard{
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 1.5vw;
     height: 50vh;
     width: 60vw;
     overflow-y: auto;
+    min-width: 300px;
 }
 
 .mainContentCard h3,
@@ -105,11 +108,11 @@
 
 .image {
   width: auto;
-  height: 250px;
+  height: 30vh;
   object-fit: contain; /* preserves full image without cropping */
   display: block;
   border-radius: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 1vh;
   justify-self: left;
   border: 1px solid white;
 }
@@ -117,10 +120,16 @@
 .mainContentCard .content{
     display: flex;
     grid-template-columns: 1fr 1fr;
-    padding-top: 10px;
+    padding-top: 2vh;
+}
+
+@media (max-width: 900px) {
+    .mainContentCard .content {
+        flex-direction: column;
+    }
 }
 
 .mainContentCard .description{
-    padding-left: 20px;
+    padding-left: 2vw;
 }
 

@@ -18,17 +18,16 @@
 /* css */
 .carouselContainer {
   display: flex;
-  gap: 40px;
+  gap: 2vw; /* space between cards */
   overflow-x: auto;      /* allow horizontal scrolling */
   overflow-y: visible;   /* allow scaled cards to show outside vertically */
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 0px;
-  padding: 10px 40px 30px; /* extra bottom padding so scaled card isn't cut off */
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 0;
   color: #303359;
   align-items: center;   /* vertically center cards inside the track */
   scrollbar-width: none;
-  padding-top: 25px;
+  padding-top: 5vh;
 }
 
 
@@ -45,8 +44,8 @@ h2{
 .subTitle {
     color: #C3E4EB;
     text-align: left;
-    margin-left: 150px;
-    margin-top: 0px;
+    margin-left: 10vw;
+    margin-top: 0;
 }
 
 .spacer {
