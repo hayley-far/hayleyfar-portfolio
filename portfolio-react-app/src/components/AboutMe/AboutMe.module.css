@@ -8,32 +8,58 @@ Styles for the main About Me section container
 
 }
 
+.aboutMe h1 {
+  /* larger minimum so it starts big on small devices, but still shrinks on tiny screens */
+  font-size: clamp(30px, 9vw, 60px);
+  margin-top: 2vh;
+  line-height: 1.05;
+  transition: font-size 150ms ease;
+}
+
 
 /* .aboutMe p */
+/* css */
 .aboutMe p {
-  font-size: 18px;
+  /* responsive paragraph sizing to shrink on narrow viewports */
+  font-size: clamp(9px, 2.6vw, 18px);
   color: #ffffff;
-  margin-top: 0;
+  margin-top: 0.5rem;
+  margin-left: 10vw;
   opacity: 0.95;
-  padding-left: 8vw;
+  transition: font-size 150ms ease;
 }
 
 
 /* .container */
 /* .container */
+/* css */
+/* File: `portfolio-react-app/src/components/AboutMe/AboutMe.module.css` */
+/* Recommended: stop internal scrolling so ScrollReveal uses window */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  margin-top: 30vh;
+  justify-content: flex-start;
+  gap: 1rem;
   width: 100%;
-  min-height: 90vh;
-  padding: 8vh 10vw;
   box-sizing: border-box;
+
+  padding: calc(var(--header-height, 64px) + 1rem) 6vw 2vh;
   background-color: #1D2638;
   color: #C3E4EB;
-  margin-top: 20vh;
+
+  /* Use page scrolling instead of an inner scrollable container */
+  min-height: calc(100vh - var(--header-height, 64px));
+  max-height: none;
+  overflow: visible;
+  scroll-padding-top: var(--header-height, 64px);
+}
+/* keep phones from getting extra offset */
+@media (max-width: 868px) {
+  .container {
+   margin-top: 0;
+  }
 }
 
 
@@ -41,45 +67,41 @@ Styles for the main About Me section container
 .content {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   width: 100%;
 }
 
-/* change to single column on smaller screens */
+/* Condense layout and spacing on small screens */
 @media (max-width: 868px) {
   .content {
-    padding-top: 15vh;
+    padding-top: 2vh; /* much smaller top padding so content isn't forced down */
     grid-template-columns: 1fr;
     text-align: center;
     justify-items: center;
+    gap: 0.75rem;
   }
 
   .aboutMe {
     text-align: center;
   }
-
-  .aboutMe p {
-    font-size: 16px;
-  }
 }
 
 /* .arrowLink */
-.arrowLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.5rem;
-  width: 100%;
-}
-
-/* .arrow */
 .arrow {
   width: 5vh;
   height: auto;
   display: block;
-  padding-top: 15vh;
-  padding-bottom: 6vh;
+  padding-top: 0; /* remove large top padding that pushes layout down */
+  padding-bottom: 2vh;
+}
+
+.arrowLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 
@@ -94,13 +116,27 @@ Styles for the main About Me section container
 
 
 /* .img */
+/* css */
 .img {
-  width: clamp(200px, 20vw, 400px);
+  width: clamp(140px, 20vw, 320px);
   max-width: 100%;
-  /*min-width: 250px; */
   height: auto;
   border-radius: 50%;
   display: block;
-  margin: 0;
-  margin-top: 5vh;
+  margin: 0; /* remove margin-top that pushed the image up under header */
+  margin-left: 5vw;
+
+  /* cap image height so it can't extend into the header area */
+  max-height: calc(100vh - var(--header-height, 64px) - 8rem);
+  object-fit: cover;
 }
+
+/* tighter avatar sizing on small screens to help everything fit */
+@media (max-width: 600px) {
+  .img {
+    width: clamp(100px, 28vw, 220px);
+    /* use a proportion of viewport height so it doesn't overflow */
+    max-height: calc(40vh - var(--header-height, 64px));
+  }
+}
+

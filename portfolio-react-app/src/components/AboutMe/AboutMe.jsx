@@ -19,7 +19,7 @@ function AboutMe() {
           <img src={profile} alt="profile" className={styles.img} />
         </div>
         <div className={styles.aboutMe}>
-          <h1 style={{ fontSize: 60 }}>// about me</h1>
+          <h1>// about me</h1>
           <p>
             I am currently in my penultimate-year studying Software Engineering at Victoria University of Wellington, with a
             passion for building interactive projects. I enjoy experimenting with new technologies and approaches, and I’m
