@@ -16,5 +16,10 @@
     margin-top: 0;
     margin-bottom: 8vh;
     margin-right: 10vw;
+    font-size: clamp(9px, 3vw, 18px);
+}
+
+.header h2{
+    font-size: clamp(30px, 9vw, 50px);
 }
 

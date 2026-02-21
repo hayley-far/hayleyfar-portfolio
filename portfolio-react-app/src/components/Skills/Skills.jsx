@@ -12,7 +12,7 @@ function Skills() {
   return (
       <>
       <section id="skills" className={styles.header}>
-          <h2 style={{fontSize: 50}}>// skills</h2>
+          <h2>// skills</h2>
       </section>
       <p className={styles.subTitle}> {'>'} Technical skills in programming and software development gained through university and personal projects. </p>
       <section className={styles.gridContainer}>

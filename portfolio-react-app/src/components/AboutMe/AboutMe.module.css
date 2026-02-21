@@ -10,7 +10,7 @@ Styles for the main About Me section container
 
 .aboutMe h1 {
   /* larger minimum so it starts big on small devices, but still shrinks on tiny screens */
-  font-size: clamp(30px, 9vw, 60px);
+  font-size: clamp(30px, 9vw, 50px);
   margin-top: 2vh;
   line-height: 1.05;
   transition: font-size 150ms ease;

@@ -24,6 +24,7 @@
 }
 .left h2 {
   margin: 0;
+  font-size: clamp(30px, 9vw, 50px);
 }
 
 /* make image responsive, remove negative margin-top */

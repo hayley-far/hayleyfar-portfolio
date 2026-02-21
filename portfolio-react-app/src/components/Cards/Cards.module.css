@@ -12,6 +12,7 @@
     text-align: left;
     margin-left: 5vw;
     width: 80%;
+    font-size: clamp(10px, 1.5vw, 16px);
 }
 
 .description {
@@ -20,8 +21,10 @@
 
 .projectCard{
     background-color: #1D2638;
-    flex: 0 0 29%; /* 3 cards + peek */
-    min-width: 380px;
+    flex: 0 1 auto;
+    width: clamp(200px, 40vw, 360px);
+    min-width: 100px;
+    max-width: 90%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -31,6 +34,7 @@
     padding-bottom: 3vh;
     border: 2px solid white;
     border-color: white;
+    font-size: clamp(9px, 1.5vw, 16px);
 }
 
 .projectCard:hover{

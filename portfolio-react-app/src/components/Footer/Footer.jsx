@@ -9,7 +9,7 @@ import styles from './Footer.module.css';
 function Footer() {
   return (
       <div className={styles.footer}>
-            <p>© 2026 Hayley Far. All rights reserved.</p>
+            <p className={styles.context}>© 2026 Hayley Far. All rights reserved.</p>
       </div>
     );
 }
