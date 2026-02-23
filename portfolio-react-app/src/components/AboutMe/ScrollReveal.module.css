@@ -44,7 +44,7 @@
 }
 
 .titleContent h1 {
-  font-size: clamp(80px, 13vw, 160px);
+  font-size: clamp(80px, 13vw, 200px);
   margin-top: 3vh;
   line-height: 1;
   transition: font-size 150ms ease;

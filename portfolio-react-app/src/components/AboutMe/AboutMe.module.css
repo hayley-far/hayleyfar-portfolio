@@ -11,7 +11,6 @@ Styles for the main About Me section container
 .aboutMe h1 {
   /* larger minimum so it starts big on small devices, but still shrinks on tiny screens */
   font-size: clamp(30px, 9vw, 50px);
-  margin-top: 2vh;
   line-height: 1.05;
   transition: font-size 150ms ease;
 }
@@ -29,12 +28,6 @@ Styles for the main About Me section container
   transition: font-size 150ms ease;
 }
 
-
-/* .container */
-/* .container */
-/* css */
-/* File: `portfolio-react-app/src/components/AboutMe/AboutMe.module.css` */
-/* Recommended: stop internal scrolling so ScrollReveal uses window */
 .container {
   display: flex;
   flex-direction: column;
@@ -93,14 +86,12 @@ Styles for the main About Me section container
   height: auto;
   display: block;
   padding-top: 0; /* remove large top padding that pushes layout down */
-  padding-bottom: 2vh;
 }
 
 .arrowLink {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
   width: 100%;
 }
 
