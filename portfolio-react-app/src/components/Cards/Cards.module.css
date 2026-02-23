@@ -52,6 +52,7 @@
     height: 13vh;
     border-radius: 40px;
     opacity: 0.7;
+    font-size: clamp(13px, 1.5vw, 16px);
 }
 
 .projectPageCard:hover{
@@ -80,6 +81,7 @@
 .purple .description,
 .green .description {
   color: var(--border-color);
+  font-size: clamp(9px, 1.5vw, 16px);
 }
 
 .mainContentCard{
@@ -87,7 +89,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1.5vw;
     height: 50vh;
-    width: 60vw;
+    width: auto;
     overflow-y: auto;
     min-width: 300px;
 }
@@ -95,6 +97,7 @@
 .mainContentCard h3,
 .mainContentCard .date{
     color: #fff;
+    font-size: clamp(10px, 1.2vw, 20px);
 }
 
 .date{
@@ -115,10 +118,8 @@
   height: 30vh;
   object-fit: contain; /* preserves full image without cropping */
   display: block;
-  border-radius: 12px;
   margin-bottom: 1vh;
   justify-self: left;
-  border: 1px solid white;
 }
 
 .mainContentCard .content{
@@ -129,8 +130,18 @@
 
 @media (max-width: 900px) {
     .mainContentCard .content {
+        display: flex;
         flex-direction: column;
     }
+    .mainContentCard .content .description {
+        order: 1;
+        padding-left: 0;
+        margin-top: -5vh;
+      }
+
+      .mainContentCard .content .image {
+        order: 2;
+      }
 }
 
 .mainContentCard .description{
