@@ -5,6 +5,7 @@
   align-items: flex-start;
   background-color: #1D2638;
   flex-direction: row; /* allow wrapping/responsive changes */
+  margin-bottom: 10vh;
 }
 
 /* keep content flexible and wrap when needed */

@@ -22,8 +22,8 @@ function Skills() {
             variant="skillsCard"
           />
           <Card
-            title="Frameworks"
-            description={<p>Java Swing   |   React   |   JUnit</p>}
+            title="Frameworks & Libraries"
+            description={<p>Java Swing   |   JUnit   |   React</p>}
             variant="skillsCard"
           />
           <Card

@@ -51,7 +51,7 @@ function Projects() {
 
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">
-              <Card title="Portfolio Website" description={<p>This portfolio website</p>} variant="projectCard" />
+              <Card title="Portfolio Website" description={<p>Interactive Web Portfolio</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#bomberman">
               <Card title="Acorn Bomber" description={<p>2D Bomberman-style game</p>} variant="projectCard" />
