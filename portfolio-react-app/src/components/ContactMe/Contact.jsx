@@ -15,7 +15,8 @@ function Contact() {
   return (
     <div className={styles.contactSection}>
       <div className={styles.left}>
-        <h2 style={{fontSize: 50 }}>// contact me</h2>
+        <h2>// contact me</h2>
+        <p className={styles.subTitle}> {'>'} Feel free to reach out through one of the platforms below!</p>
         <div className={styles.contactInfo}>
           <a href="https://www.linkedin.com/in/hayley-far-33a366355/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="LinkedIn Icon" className={styles.icon} />

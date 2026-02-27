@@ -21,11 +21,12 @@
   align-items: center;
   gap: 1vw;
   margin-right: 2vw;
+  font-size: clamp(10px, 2vw, 20px);
 }
 
 /* circle */
 .codeSymbol {
-  width: 16px;
-  height: 16px;
+  width: clamp(8px, 2vw, 16px);
+  height: clamp(8px, 2vw, 16px);
   border-radius: 50%;
 }

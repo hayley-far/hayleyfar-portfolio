@@ -12,6 +12,7 @@
     text-align: left;
     margin-left: 5vw;
     width: 80%;
+    font-size: clamp(10px, 2vw, 16px);
 }
 
 .description {
@@ -20,8 +21,10 @@
 
 .projectCard{
     background-color: #1D2638;
-    flex: 0 0 29%; /* 3 cards + peek */
-    min-width: 380px;
+    flex: 0 1 auto;
+    width: clamp(200px, 40vw, 360px);
+    min-width: 100px;
+    max-width: 90%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -31,6 +34,7 @@
     padding-bottom: 3vh;
     border: 2px solid white;
     border-color: white;
+    font-size: clamp(9px, 1.8vw, 16px);
 }
 
 .projectCard:hover{
@@ -48,6 +52,7 @@
     height: 13vh;
     border-radius: 40px;
     opacity: 0.7;
+    font-size: clamp(13px, 1.5vw, 16px);
 }
 
 .projectPageCard:hover{
@@ -76,6 +81,8 @@
 .purple .description,
 .green .description {
   color: var(--border-color);
+  font-size: clamp(9px, 2vw, 16px);
+  margin-top: -2vh;
 }
 
 .mainContentCard{
@@ -83,7 +90,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1.5vw;
     height: 50vh;
-    width: 60vw;
+    width: auto;
     overflow-y: auto;
     min-width: 300px;
 }
@@ -91,6 +98,7 @@
 .mainContentCard h3,
 .mainContentCard .date{
     color: #fff;
+    font-size: clamp(10px, 2vw, 17px);
 }
 
 .date{
@@ -111,10 +119,8 @@
   height: 30vh;
   object-fit: contain; /* preserves full image without cropping */
   display: block;
-  border-radius: 12px;
   margin-bottom: 1vh;
   justify-self: left;
-  border: 1px solid white;
 }
 
 .mainContentCard .content{
@@ -125,8 +131,23 @@
 
 @media (max-width: 900px) {
     .mainContentCard .content {
+        display: flex;
         flex-direction: column;
     }
+    .mainContentCard .content .description {
+        order: 1;
+        padding-left: 0;
+        margin-top: -2vh;
+      }
+
+      .mainContentCard .content .image {
+        order: 2;
+      }
+      .image{
+        width: auto;
+        max-height: 30vh;
+        margin: 0 auto; /* center image on small screens */
+      }
 }
 
 .mainContentCard .description{

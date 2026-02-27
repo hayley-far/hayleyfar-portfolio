@@ -1,7 +1,6 @@
 import React from 'react';
 // Import the logo image
 // Webpack/Vite will handle bundling this image
-import logo from '../../assets/logo.jpeg';
 // Import CSS Module styles
 // CSS Modules keep styles scoped to this component only
 import './Skills.module.css';
@@ -13,7 +12,7 @@ function Skills() {
   return (
       <>
       <section id="skills" className={styles.header}>
-          <h2 style={{fontSize: 50}}>// skills</h2>
+          <h2>// skills</h2>
       </section>
       <p className={styles.subTitle}> {'>'} Technical skills in programming and software development gained through university and personal projects. </p>
       <section className={styles.gridContainer}>
@@ -23,8 +22,8 @@ function Skills() {
             variant="skillsCard"
           />
           <Card
-            title="Frameworks"
-            description={<p>Java Swing   |   React   |   JUnit</p>}
+            title="Frameworks & Libraries"
+            description={<p>Java Swing   |   JUnit   |   React</p>}
             variant="skillsCard"
           />
           <Card

@@ -44,16 +44,18 @@
 }
 
 .titleContent h1 {
-  font-size: 160px;
-  margin: 0;
+  font-size: clamp(80px, 13vw, 200px);
+  margin-top: 3vh;
   line-height: 1;
-  text-align: left;
+  transition: font-size 150ms ease;
 }
 
-.titleContent p{
-    text-align: left;
-    font-size: 30px;
-    color: #a882bf;
+.titleContent p {
+  font-size: clamp(14px, 3vw, 30px);
+  margin: 0.6rem 0 0;
+  color: #a882bf;
+  transition: font-size 150ms ease;
+  text-align: left;
 }
 
 .codeBlock {

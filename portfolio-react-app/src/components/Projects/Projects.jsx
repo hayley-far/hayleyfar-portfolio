@@ -46,12 +46,12 @@ function Projects() {
       {/* Sticky scroll container */}
       <div ref={containerRef} className={styles.stickyContainer}>
         <section className={styles.stickySection}>
-          <h2 style={{fontSize: 50}}>// projects</h2>
+          <h2>// projects</h2>
           <p className={styles.subTitle}> {'>'} Click on a project to learn more about it!</p>
 
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">
-              <Card title="Portfolio Website" description={<p>This portfolio website</p>} variant="projectCard" />
+              <Card title="Portfolio Website" description={<p>Interactive Web Portfolio</p>} variant="projectCard" />
             </Link>
             <Link to="/projects#bomberman">
               <Card title="Acorn Bomber" description={<p>2D Bomberman-style game</p>} variant="projectCard" />

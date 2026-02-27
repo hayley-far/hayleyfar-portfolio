@@ -22,7 +22,8 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: clamp(9px, 2vw, 18px);
+    transition: color 150ms ease, font-size 150ms ease;
 }
 
 /* Hover state */

@@ -39,6 +39,7 @@
 
 h2{
     color: #C3E4EB;
+    font-size: clamp(30px, 9vw, 50px);
 }
 
 .subTitle {
@@ -46,6 +47,7 @@ h2{
     text-align: left;
     margin-left: 10vw;
     margin-top: 0;
+    font-size: clamp(9px, 3vw, 18px);
 }
 
 .spacer {

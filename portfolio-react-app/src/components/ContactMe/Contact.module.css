@@ -5,6 +5,7 @@
   align-items: flex-start;
   background-color: #1D2638;
   flex-direction: row; /* allow wrapping/responsive changes */
+  margin-bottom: 10vh;
 }
 
 /* keep content flexible and wrap when needed */
@@ -16,6 +17,14 @@
   align-items: flex-start;
 }
 
+.subTitle {
+    color: #C3E4EB;
+    text-align: left;
+    margin-top: 5vh;
+    font-size: clamp(9px, 3vw, 18px);
+    margin-right: 10vw;
+}
+
 .left {
   display: flex;
   flex-direction: column;
@@ -24,6 +33,7 @@
 }
 .left h2 {
   margin: 0;
+  font-size: clamp(30px, 9vw, 50px);
 }
 
 /* make image responsive, remove negative margin-top */
@@ -39,8 +49,8 @@
 
 /* icons scale with viewport but clamp to sensible sizes */
 .icon {
-  width: 4vw;
-  height: 4vw;
+  width: 5vw;
+  height: 5vw;
   border-radius: 20%;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -53,16 +63,16 @@
 
 /* Responsive: switch to single column on smaller screens */
 @media (max-width: 900px) {
-  .contactSection,
-  .contactInfo {
+  .contactSection{
     flex-direction: column;
     align-items: center;
   }
 
   .left {
     margin-left: 0;
-    align-items: center;
-    text-align: center;
+    align-self: flex-start;
+    margin-left: 10vw;
+    text-align: left;
   }
 
   .img {
@@ -70,6 +80,12 @@
     max-width: 360px;
     min-width: 0;
     margin: 2vh 0 0 0;
+  }
+
+  .contactInfo {
+    margin: 2vh 10vh 0 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .icon {

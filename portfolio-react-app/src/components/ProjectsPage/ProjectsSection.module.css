@@ -1,14 +1,14 @@
-/* File: portfolio-react-app/src/components/ProjectsPage/ProjectsSection.module.css */
+/* File: `portfolio-react-app/src/components/ProjectsPage/ProjectsSection.module.css` */
 .projectsSection {
   position: relative;
   padding: 2vw;
   padding-top: 0;
   display: grid;
-  grid-template-columns: 2fr 5fr; /* use a space, not a comma */
-  gap: 3vw; /* space between columns */
+  grid-template-columns: 2fr 5fr;
+  gap: 3vw;
   align-items: start;
   height: 70vh;
-  width: 100vw; /* use percent to avoid viewport overflow */
+  width: 100%;
   box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 7vh;
@@ -20,10 +20,11 @@
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
-  gap: 5vh; /* space between cards */
+  gap: 5vh;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 5vh; /* space between first card and carousel */
+  scroll-padding-top: 5vh;
+  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
   grid-column: 1 / 2;
   padding-right: 2vw;
@@ -38,6 +39,37 @@
   grid-column: 2 / 3;
   padding: 2vw;
   padding-top: 4vh;
-  overflow: auto; /* or auto if it needs scrolling */
+  overflow: auto;
   text-align: left;
+}
+
+/* Responsive: stack into single column with main above carousel and keep carousel scroll area */
+@media (max-width: 768px) {
+  .projectsSection {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "carousel";
+    gap: 1rem;
+    height: auto; /* let the page flow naturally */
+    margin-bottom: 4vh;
+  }
+
+  .mainContent {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 1rem;
+    justify-self: center;
+  }
+
+  .carouselContainer {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-height: 48vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; /* keep snap on mobile */
+    scroll-padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 }
