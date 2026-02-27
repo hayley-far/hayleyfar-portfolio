@@ -16,6 +16,14 @@
   align-items: flex-start;
 }
 
+.subTitle {
+    color: #C3E4EB;
+    text-align: left;
+    margin-top: 5vh;
+    font-size: clamp(9px, 3vw, 18px);
+    margin-right: 10vw;
+}
+
 .left {
   display: flex;
   flex-direction: column;
@@ -74,7 +82,7 @@
   }
 
   .contactInfo {
-    margin-left: 18vw;
+    margin: 2vh 10vh 0 0;
     align-items: center;
     justify-content: center;
   }
