@@ -12,7 +12,7 @@
     text-align: left;
     margin-left: 5vw;
     width: 80%;
-    font-size: clamp(10px, 1.5vw, 16px);
+    font-size: clamp(10px, 2vw, 16px);
 }
 
 .description {
@@ -34,7 +34,7 @@
     padding-bottom: 3vh;
     border: 2px solid white;
     border-color: white;
-    font-size: clamp(9px, 1.5vw, 16px);
+    font-size: clamp(9px, 1.8vw, 16px);
 }
 
 .projectCard:hover{
@@ -81,7 +81,7 @@
 .purple .description,
 .green .description {
   color: var(--border-color);
-  font-size: clamp(9px, 1.5vw, 16px);
+  font-size: clamp(9px, 2vw, 16px);
 }
 
 .mainContentCard{
@@ -97,7 +97,7 @@
 .mainContentCard h3,
 .mainContentCard .date{
     color: #fff;
-    font-size: clamp(10px, 1.2vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 .date{

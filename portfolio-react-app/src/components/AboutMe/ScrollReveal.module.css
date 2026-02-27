@@ -51,7 +51,7 @@
 }
 
 .titleContent p {
-  font-size: clamp(14px, 2.2vw, 30px);
+  font-size: clamp(14px, 3vw, 30px);
   margin: 0.6rem 0 0;
   color: #a882bf;
   transition: font-size 150ms ease;

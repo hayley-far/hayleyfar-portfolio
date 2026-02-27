@@ -21,7 +21,7 @@
   align-items: center;
   gap: 1vw;
   margin-right: 2vw;
-  font-size: clamp(10px, 1.2vw, 20px);
+  font-size: clamp(10px, 2vw, 20px);
 }
 
 /* circle */
