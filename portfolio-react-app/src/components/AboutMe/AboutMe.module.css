@@ -68,7 +68,7 @@ Styles for the main About Me section container
 /* Condense layout and spacing on small screens */
 @media (max-width: 868px) {
   .content {
-    padding-top: 2vh; /* much smaller top padding so content isn't forced down */
+    padding-top: 13vh;
     grid-template-columns: 1fr;
     text-align: center;
     justify-items: center;

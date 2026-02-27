@@ -82,6 +82,7 @@
 .green .description {
   color: var(--border-color);
   font-size: clamp(9px, 2vw, 16px);
+  margin-top: -2vh;
 }
 
 .mainContentCard{
@@ -97,7 +98,7 @@
 .mainContentCard h3,
 .mainContentCard .date{
     color: #fff;
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(10px, 2vw, 17px);
 }
 
 .date{
@@ -136,11 +137,16 @@
     .mainContentCard .content .description {
         order: 1;
         padding-left: 0;
-        margin-top: -5vh;
+        margin-top: -2vh;
       }
 
       .mainContentCard .content .image {
         order: 2;
+      }
+      .image{
+        width: auto;
+        max-height: 30vh;
+        margin: 0 auto; /* center image on small screens */
       }
 }
 
