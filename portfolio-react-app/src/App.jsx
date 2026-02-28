@@ -9,15 +9,13 @@ function App() {
     <BrowserRouter>
       <Header /> {/* stays on all pages */}
       <main>
-        <Routes>
+        <Routes> {/* define routes for the application. Each route corresponds to a URL path and renders a specific component. */}
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:id" element={<ProjectsPage />} />
-          {/* Add more pages here */}
+          <Route path="/projects/:id" element={<ProjectsPage />} /> {/* when user clicks on certain project on homepage */}
         </Routes>
       </main>
       <Footer /> {/* stays on all pages */}
-
     </BrowserRouter>
   );
 }

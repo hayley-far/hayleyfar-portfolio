@@ -15,7 +15,7 @@ function HomePage() {
     //<> </> is a react fragment that allows multiple elements to be returned without adding extra nodes to the DOM
   return (
       <>
-       <ScrollReveal />
+       <ScrollReveal /> {/* About me section is called inside here */}
        <Skills />
        <Projects />
        <Contact />
