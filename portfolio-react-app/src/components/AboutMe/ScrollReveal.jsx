@@ -8,6 +8,7 @@ function ScrollReveal() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const containerRef = useRef(null);
 
+  // scroll handling function to calculate scroll progress and update state
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return;
@@ -35,7 +36,6 @@ function ScrollReveal() {
       `}</style>
 
       <div className={styles.spacer} />
-
       <div ref={containerRef} className={styles.stickyContainer}>
         <div className={styles.stickySection}>
           <div
@@ -51,7 +51,6 @@ function ScrollReveal() {
           <div className={styles.aboutMeSection}>
             <AboutMe />
           </div>
-
         </div>
       </div>
     </div>
