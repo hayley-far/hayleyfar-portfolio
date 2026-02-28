@@ -41,7 +41,7 @@
 }
 
 .titleContent p { /* smaller font size for the Hi my name is */
-  font-size: clamp(14px, 3vw, 30px);
+  font-size: clamp(18px, 3vw, 30px);
   margin: 0.6rem 0 0;
   color: #a882bf;
   transition: font-size 150ms ease;
