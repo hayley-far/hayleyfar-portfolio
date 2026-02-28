@@ -4,22 +4,28 @@
     height: 100%;
 }
 
-.default{
+.default{ /* if no variant specified, use this */
     background-color: #fff;
 }
 
-.skillsCard{
+.description {
+  color: #a882bf; /*purple text for all cards, unless overridden*/
+}
+
+.skillsCard{ /* cards in skills section*/
     text-align: left;
     margin-left: 5vw;
     width: 80%;
     font-size: clamp(10px, 2vw, 16px);
 }
 
-.description {
-  color: #a882bf;
+/* text color for title in skills cards and project cards on home page, green for all */
+.skillsCard h3,
+.projectCard h3{
+    color: #63ad7d;
 }
 
-.projectCard{
+.projectCard{ /* cards in projects section on home page */
     background-color: #1D2638;
     flex: 0 1 auto;
     width: clamp(200px, 40vw, 360px);
@@ -37,11 +43,11 @@
     font-size: clamp(9px, 1.8vw, 16px);
 }
 
-.projectCard:hover{
+.projectCard:hover{ /* hover effect for project cards on home page */
     box-shadow: 0 0 20px 2px rgba(74,82,168,0.9);
 }
 
-.projectPageCard{ /* smaller cards for projects page carousel */
+.projectPageCard{ /* cards on carousel on project page */
     flex: 0 0 20%; /* 3 cards + peek */
     text-align: center;
     display: flex;
@@ -55,6 +61,7 @@
     font-size: clamp(13px, 1.5vw, 16px);
 }
 
+/* hover effect for project cards on project page, when not active*/
 .projectPageCard:hover{
     transform: scale(1.02);
     transition: transform 0.3s;
@@ -62,30 +69,33 @@
     opacity: 1;
 }
 
+/* active card in project page carousel, matches the hover but persistent */
 .projectPageCard.active{
     opacity: 1;
     transform: scale(1.02);
     box-shadow: 0 0 20px 2px rgba(74,82,168,0.9);
 }
 
-.purple {
+.purple { /* personal projects are purple, set in projectsSection.jsx */
   --border-color: #a882bf;
   border: 2px solid var(--border-color);
 }
 
-.green {
+.green { /* university projects are green, set in projectsSection.jsx */
   --border-color: #63ad7d;
   border: 2px solid var(--border-color);
 }
 
+/* For the main content cards on the project page
+   text color for description in purple and green cards, matches the border color for each */
 .purple .description,
 .green .description {
-  color: var(--border-color);
+  color: var(--border-color); /* using variable set in the .purple or .green */
   font-size: clamp(9px, 2vw, 16px);
   margin-top: -2vh;
 }
 
-.mainContentCard{
+.mainContentCard{ /* main content cards on project page, with image and project description */
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1.5vw;
@@ -95,45 +105,49 @@
     min-width: 300px;
 }
 
+/* text color for title and date in main content cards on project page, white for all */
 .mainContentCard h3,
 .mainContentCard .date{
     color: #fff;
     font-size: clamp(10px, 2vw, 17px);
 }
 
-.date{
-    text-align: right;
-}
-
-.skillsCard h3,
-.projectCard h3{
-    color: #63ad7d;
-}
-
-.projectPageCard h3{
-    color: white;
-}
-
-.image {
-  width: auto;
-  height: 30vh;
-  object-fit: contain; /* preserves full image without cropping */
-  display: block;
-  margin-bottom: 1vh;
-  justify-self: left;
-}
-
+/* content holds the image and description of the project card in projects page
+   set in the cards.jsx
+*/
 .mainContentCard .content{
     display: flex;
     grid-template-columns: 1fr 1fr;
     padding-top: 2vh;
 }
 
+.mainContentCard .description{
+    padding-left: 2vw;
+}
+
+.date{ /* date in main content cards on project page, date is not used in other card variants */
+    text-align: right;
+}
+
+.image { /* image in main content cards on project page, image is not used in other card variants */
+  width: auto;
+  height: 30vh;
+  object-fit: contain; /* preserves full image WITHOUT cropping */
+  display: block;
+  margin-bottom: 1vh;
+  justify-self: left;
+}
+
+/* Responsive design for main content cards on project page
+    Change the layout of the projects page cards
+    to stack vertically on smaller screens
+*/
 @media (max-width: 900px) {
     .mainContentCard .content {
         display: flex;
         flex-direction: column;
     }
+    /*have an order so when vertically stacked, the description is above the image*/
     .mainContentCard .content .description {
         order: 1;
         padding-left: 0;
@@ -148,9 +162,5 @@
         max-height: 30vh;
         margin: 0 auto; /* center image on small screens */
       }
-}
-
-.mainContentCard .description{
-    padding-left: 2vw;
 }
 
