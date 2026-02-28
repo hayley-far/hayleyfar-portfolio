@@ -33,22 +33,6 @@
   width: 100%;
 }
 
-/* Condense layout and spacing on small screens */
-@media (max-width: 868px) {
-  .content {
-    padding-top: 13vh;
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
-    gap: 0.75rem;
-    margin-right: 10vw;
-  }
-
-  .aboutMe {
-    text-align: center;
-  }
-}
-
 .left { /* left column: image container */
   display: flex;
   justify-content: flex-start;
@@ -97,6 +81,27 @@
   margin-left: 10vw;
   opacity: 0.95;
   transition: font-size 150ms ease;
+}
+
+/* Condense layout and spacing on small screens */
+@media (max-width: 868px) {
+  .content {
+    padding-top: 13vh;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 0.75rem;
+    margin-right: 10vw;
+  }
+
+  .aboutMe p {
+    text-align: left;
+  }
+
+  .aboutMe h1 {
+    text-align: left;
+    padding-left: 10vw;
+  }
 }
 
 .arrow {
