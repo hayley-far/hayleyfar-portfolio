@@ -1,10 +1,10 @@
-/* File: `portfolio-react-app/src/components/ProjectsPage/ProjectsSection.module.css` */
+/* Container for the entire projects section in projects page */
 .projectsSection {
   position: relative;
   padding: 2vw;
   padding-top: 0;
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 2fr 5fr; /* left column (carousel) is 2/7 of width, right column (main content) is 5/7 of width */
   gap: 3vw;
   align-items: start;
   height: 70vh;
@@ -33,7 +33,7 @@
   padding-top: 4vh;
 }
 
-/* right column: main content */
+/* right column: main content/project being displayed */
 .mainContent {
   box-sizing: border-box;
   grid-column: 2 / 3;
