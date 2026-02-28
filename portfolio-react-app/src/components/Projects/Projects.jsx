@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 import styles from './Projects.module.css';
 import Card from '../Cards/Cards.jsx';
 
+/* When the user scrolls to the projects section, the carousel will scroll horizontally to reveal more projects.
+The user will continue to scroll while the page scrolls horizontally rather than vertically.
+Once the user has scrolled through all the projects, the page will scroll vertically again.
+ */
 function Projects() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const containerRef = useRef(null);
   const carouselRef = useRef(null);
 
+  // to track the VERTICAL scroll, inside the sticky container
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return;
@@ -19,15 +24,13 @@ function Projects() {
         Math.max(-rect.top / (rect.height - windowHeight), 0),
         1
       );
-
       setScrollProgress(progress);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Apply horizontal scroll based on progress
+  // Apply HORIZONTAL scroll based on progress
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
@@ -49,6 +52,7 @@ function Projects() {
           <h2>// projects</h2>
           <p className={styles.subTitle}> {'>'} Click on a project to learn more about it!</p>
 
+          {/* Carousel of project cards */}
           <div ref={carouselRef} className={styles.carouselContainer}>
             <Link to="/projects#portfolio">
               <Card title="Portfolio Website" description={<p>Interactive Web Portfolio</p>} variant="projectCard" />

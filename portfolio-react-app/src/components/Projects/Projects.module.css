@@ -1,9 +1,16 @@
+/*add vertical space before the section*/
+.spacer {
+    height: 8vh;
+}
+
+/*outer scrollable container used for scroll tracking*/
 .stickyContainer {
   height: 300vh;
   position: relative;
   overflow: visible;
 }
 
+/*stay fixed in viewport and sticky while user scrolls inside container*/
 .stickySection {
   position: sticky;
   top: 0;
@@ -15,7 +22,7 @@
   background-color: #1D2638;
 }
 
-/* css */
+/*carousel track that holds the cards and allows horizontal scrolling*/
 .carouselContainer {
   display: flex;
   gap: 2vw; /* space between cards */
@@ -30,14 +37,7 @@
   padding-top: 5vh;
 }
 
-
-.carouselContainer > a {
-  flex-shrink: 0;
-  text-decoration: none;
-  color: inherit;
-}
-
-h2{
+h2{ /*title*/
     color: #C3E4EB;
     font-size: clamp(30px, 9vw, 50px);
 }
@@ -48,8 +48,4 @@ h2{
     margin-left: 10vw;
     margin-top: 0;
     font-size: clamp(9px, 3vw, 18px);
-}
-
-.spacer {
-    height: 8vh;
 }
