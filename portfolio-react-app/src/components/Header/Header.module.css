@@ -1,10 +1,6 @@
-/*
-Styles for the header section
-*/
 header {
   position: fixed; /* Fix the header at the top of the viewport */
   box-sizing: border-box; /* Makes padding and borders included in width */
-  /* Position the header at the very top-left of the page */
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +14,7 @@ header {
   opacity: 0.9;
 }
 
-a{
+a{ /* Link styles */
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -26,19 +22,15 @@ a{
     transition: color 150ms ease, font-size 150ms ease;
 }
 
-/* Hover state */
+/* Hover state of links*/
 a:hover {
   color: #a882bf;
-}
-
-.navText {
-    color: #53633F;
 }
 
 /*
 Navigation bar styles
 */
-nav {
+nav { /*the nav tag*/
     display: flex; /* display links in a row */
     gap: 3vw; /* space between links */
 }
@@ -48,5 +40,4 @@ Logo image styles
 */
 .logo {
   height: 15vh;
-
 }
