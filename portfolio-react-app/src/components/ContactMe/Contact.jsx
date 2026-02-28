@@ -4,7 +4,7 @@ import profile from '../../assets/logo.PNG';
 
 // Icons
 import email from '../../assets/emailIcon.jpeg';
-import github from '../../assets/githubIcon.jpeg';
+import github from '../../assets/gitHubIcon.jpeg';
 import linkedin from '../../assets/LinkedInIcon.jpeg';
 
 function Contact() {
