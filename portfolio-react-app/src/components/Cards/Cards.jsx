@@ -1,8 +1,9 @@
+{/* Reusable class for all different types of card objects
+    not all the props are required, but they can be used to customize the card as needed
+    eg. images on project cards, but not skills etc
+    made reusable using the variant prop, which applies different styles based on the type of card (eg. project, skill, experience etc)
+*/}
 import React from 'react';
-// Import the logo image
-// Webpack/Vite will handle bundling this image
-// Import CSS Module styles
-// CSS Modules keep styles scoped to this component only
 import './Cards.module.css';
 import styles from './Cards.module.css';
 
@@ -23,6 +24,5 @@ function Card({ title, description, date, variant, color, isActive, onClick, ima
     </div>
   );
 }
-
 
 export default Card

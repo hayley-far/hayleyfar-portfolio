@@ -1,6 +1,4 @@
 import React from 'react';
-// Import the CSS Module file
-// CSS Modules scope styles locally to this component
 import styles from './Contact.module.css';
 import profile from '../../assets/logo.PNG';
 
@@ -9,8 +7,6 @@ import email from '../../assets/emailIcon.jpeg';
 import github from '../../assets/githubIcon.jpeg';
 import linkedin from '../../assets/linkedinIcon.jpeg';
 
-// This is a React functional component
-// Components are reusable pieces of UI
 function Contact() {
   return (
     <div className={styles.contactSection}>
@@ -36,7 +32,4 @@ function Contact() {
   );
 }
 
-
-
-// Export the component so it can be used in other files (like App.jsx)
 export default Contact

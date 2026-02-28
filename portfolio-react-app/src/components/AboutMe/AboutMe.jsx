@@ -3,6 +3,7 @@ import arrow from '../../assets/downArrow.jpeg';
 import styles from './AboutMe.module.css';
 import profile from '../../assets/profile.jpeg';
 
+// event handler: when the down arrow is clicked, scroll to the skills section with an offset for the navbar
 function AboutMe() {
   const handleScrollToSkills = (e) => {
     e.preventDefault();

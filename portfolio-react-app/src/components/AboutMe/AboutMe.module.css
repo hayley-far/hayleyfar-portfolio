@@ -1,52 +1,22 @@
-/*
-Styles for the main About Me section container
-*/
-/* .aboutMe */
-.aboutMe {
-  text-align: right;
-  line-height: 1.5;
-
-}
-
-.aboutMe h1 {
-  /* larger minimum so it starts big on small devices, but still shrinks on tiny screens */
-  font-size: clamp(30px, 9vw, 50px);
-  line-height: 1.05;
-  transition: font-size 150ms ease;
-}
-
-
-/* .aboutMe p */
-/* css */
-.aboutMe p {
-  /* responsive paragraph sizing to shrink on narrow viewports */
-  font-size: clamp(9px, 2.6vw, 18px);
-  color: #ffffff;
-  margin-top: 0.5rem;
-  margin-left: 10vw;
-  opacity: 0.95;
-  transition: font-size 150ms ease;
-}
-
-.container {
+.container { /* main container for the whole section, handles overall layout and spacing */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stack content vertically*/
   align-items: center;
   margin-top: 30vh;
   justify-content: flex-start;
   gap: 1rem;
   width: 100%;
-  box-sizing: border-box;
-
-  padding: calc(var(--header-height, 64px) + 1rem) 6vw 2vh;
-  background-color: #1D2638;
-  color: #C3E4EB;
+  box-sizing: border-box; /* include padding in width calculations */
+  /* add top padding to prevent content from being hidden under the fixed header, plus some extra spacing */
+  padding: calc(64px + 1rem) 6vw 2vh;
+  background-color: #1D2638; /*dark navy*/
+  color: #C3E4EB; /* light cyan text color */
 
   /* Use page scrolling instead of an inner scrollable container */
-  min-height: calc(100vh - var(--header-height, 64px));
+  min-height: calc(100vh - 64px);
   max-height: none;
   overflow: visible;
-  scroll-padding-top: var(--header-height, 64px);
+  scroll-padding-top: 64px;
 }
 /* keep phones from getting extra offset */
 @media (max-width: 868px) {
@@ -55,14 +25,62 @@ Styles for the main About Me section container
   }
 }
 
-
-/* .content */
-.content {
+.content { /* inner content container that holds the text and image */
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1.5rem;
   align-items: center;
   width: 100%;
+}
+
+.left { /* left column: image container */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.img {
+  width: clamp(140px, 20vw, 320px);
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0; /* remove margin-top that pushed the image up under header */
+  margin-left: 5vw;
+
+  /* cap image height so it can't extend into the header area */
+  max-height: calc(100vh - 64px - 8rem);
+  object-fit: cover;
+}
+
+/* tighter avatar sizing on small screens to help everything fit */
+@media (max-width: 600px) {
+  .img {
+    width: clamp(100px, 28vw, 220px);
+    /* use a proportion of viewport height so it doesn't overflow */
+    max-height: calc(40vh - 64px);
+  }
+}
+
+.aboutMe { /* container for the text content, title and description */
+  text-align: right;
+  line-height: 1.5;
+}
+
+.aboutMe h1 { /* title: //about me*/
+  font-size: clamp(30px, 9vw, 50px);
+  line-height: 1.05;
+  transition: font-size 150ms ease;
+}
+
+.aboutMe p { /* description text */
+  font-size: clamp(9px, 2.6vw, 18px);
+  color: #ffffff;
+  margin-top: 0.5rem; /*rem: root relative*/
+  margin-left: 10vw;
+  opacity: 0.95;
+  transition: font-size 150ms ease;
 }
 
 /* Condense layout and spacing on small screens */
@@ -76,12 +94,16 @@ Styles for the main About Me section container
     margin-right: 10vw;
   }
 
-  .aboutMe {
-    text-align: center;
+  .aboutMe p {
+    text-align: left;
+  }
+
+  .aboutMe h1 {
+    text-align: left;
+    padding-left: 10vw;
   }
 }
 
-/* .arrowLink */
 .arrow {
   width: 5vh;
   height: auto;
@@ -94,41 +116,5 @@ Styles for the main About Me section container
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-
-
-/* .left */
-.left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-}
-
-
-/* .img */
-/* css */
-.img {
-  width: clamp(140px, 20vw, 320px);
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 0; /* remove margin-top that pushed the image up under header */
-  margin-left: 5vw;
-
-  /* cap image height so it can't extend into the header area */
-  max-height: calc(100vh - var(--header-height, 64px) - 8rem);
-  object-fit: cover;
-}
-
-/* tighter avatar sizing on small screens to help everything fit */
-@media (max-width: 600px) {
-  .img {
-    width: clamp(100px, 28vw, 220px);
-    /* use a proportion of viewport height so it doesn't overflow */
-    max-height: calc(40vh - var(--header-height, 64px));
-  }
 }
 

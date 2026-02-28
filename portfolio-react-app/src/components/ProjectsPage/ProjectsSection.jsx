@@ -1,6 +1,4 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
-// Import the CSS Module file
-// CSS Modules scope styles locally to this component
 import styles from './ProjectsSection.module.css';
 import Card from '../Cards/Cards.jsx';
 
@@ -12,10 +10,8 @@ import recappImg from '../../assets/projectImgs/recapp.png';
 import galagaImg from '../../assets/projectImgs/starSwarm.png';
 import avcImg from '../../assets/projectImgs/avc.JPG';
 
-
-// This is a React functional component
-// Components are reusable pieces of UI
 function ProjectSection() {
+    {/* List of projects with their details, including title, description, date, color for styling, and image. The id is used for linking from home page cards */}
     const projects = [
             {id: "portfolio", title: "Portfolio Website", date: "Dec 2025 - Feb 2026 | React, Vite, JavaScript, HTML, CSS", description: <p>Designed and developed a personal portfolio website to showcase projects and technical skills. Learned JavaScript and React while building the portfolio, focusing on a component-based structure and responsive design.</p>, color: "purple", image: portfolioImg,},
             {id: "bomberman",title: "Acorn Bomber", date: "Jan 2026 - Feb 2026 | Java, JSON, Swing, Piskel", description: <p>Developed a two-level Bomberman-style 2D game, implementing enemy AI with both random movement and A* pathfinding. Designed and created all original sprites used in the game. Structured the project using OOP to separate rendering, game logic, and input handling.</p>, color: "purple", image: bombermanImg,},
@@ -27,6 +23,10 @@ function ProjectSection() {
     const [activeProject, setActiveProject] = useState(projects[0]);
     const carouselRef = useRef(null);
 
+    /* selecting the active project, check if there is a hash in the URL
+    if so, it means the user clicked on a project card from the home page,
+    so we set the active project to match the hash.
+    */
     useLayoutEffect(() => {
         // stop browser restoring previous scroll position
         if ('scrollRestoration' in window.history) {
@@ -59,7 +59,7 @@ function ProjectSection() {
         });
       }, []);
 
-    // Scroll the left carousel so the active project element is visible
+    // Scroll the left carousel so the active project element (in carousel) is visible
     useLayoutEffect(() => {
       const container = carouselRef.current;
       if (!container || !activeProject || !activeProject.id) return;
@@ -78,8 +78,6 @@ function ProjectSection() {
 
       container.scrollTo({ top: offset, behavior: 'smooth' });
     }, [activeProject]);
-
-
 
   return (
       <section className={styles.projectsSection}>
@@ -113,6 +111,4 @@ function ProjectSection() {
           </section>
     );
 }
-
-// Export the component so it can be used in other files (like App.jsx)
 export default ProjectSection

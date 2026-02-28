@@ -1,4 +1,3 @@
-/* css */
 .projectTitle {
   margin-top: 20vh;
   margin-bottom: 0;
@@ -11,7 +10,7 @@
 .keyCode {
   display: flex;
   gap: 1vw;
-  margin-left: auto; /* important: makes this group stick to the right */
+  margin-left: auto; /* push to the right (big as possible left margin), as flex container */
   align-items: center;
 }
 
