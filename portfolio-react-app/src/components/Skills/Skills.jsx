@@ -1,13 +1,9 @@
 import React from 'react';
-// Import the logo image
-// Webpack/Vite will handle bundling this image
-// Import CSS Module styles
-// CSS Modules keep styles scoped to this component only
 import './Skills.module.css';
 import styles from './Skills.module.css';
-
 import Card from '../Cards/Cards.jsx';
 
+// Scrolls to the top of this section when the arrow button in the header is clicked
 function Skills() {
   return (
       <>

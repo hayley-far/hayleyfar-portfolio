@@ -1,3 +1,4 @@
+/* two cards in a column, on repeat*/
 .gridContainer {
     position: relative;
     display: grid;
@@ -9,6 +10,11 @@
     z-index: 1; /* Ensure this section is above the next section for scrolling effect */
 }
 
+.header h2{ /* title */
+    margin-top: -1vh;
+    font-size: clamp(30px, 9vw, 50px);
+}
+
 .subTitle {
     color: #C3E4EB;
     text-align: left;
@@ -17,10 +23,5 @@
     margin-bottom: 8vh;
     margin-right: 10vw;
     font-size: clamp(9px, 3vw, 18px);
-}
-
-.header h2{
-    margin-top: -1vh;
-    font-size: clamp(30px, 9vw, 50px);
 }
 
